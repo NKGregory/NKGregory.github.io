@@ -1,0 +1,189 @@
+header{
+    background-color:  #71A9F7;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+#bannertext{
+    display: block;
+    background-color: #1c263F;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    padding: .25em;
+    text-align: center;
+}
+#bannertext.notfriday{
+    display: none;
+}
+header img{
+    background-color: white;
+    border-radius: 3.5em 0 3.5em 0;
+    width: 98px;
+    margin-left: .5em;
+}
+h1{
+    font-size: 1.6rem;
+    font-weight:100;
+    font-family: 'Knewave', cursive;
+    color: white;
+    margin-left: 15px;
+
+}
+.subhead{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 25px;
+    margin-top: -.5em;
+}
+footer{
+    font-family: 'Roboto', sans-serif;
+    background-color: #71A9F7;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: black;
+}
+body{
+    background-color: #c6D8ff;
+}
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.herocontain {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1100px;
+    width: 85%;
+}
+.herocontain picture{
+    width: 100%;
+}
+.herocontain img{
+    width: 100%;
+}
+.weathersummary{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 10px;
+    background-color: #1c263F99;
+    color: white;
+    border: 1px solid black;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+}
+.weathersummary p{
+    font-size: 70%;
+}
+.weathersummary h3{
+    font-size: 70%;
+    margin: 0;
+    text-decoration: underline;
+}
+.forcast{
+    display: none;
+}
+.article{
+    font-family: 'Roboto', sans-serif;
+    max-width: 650px;
+    width:85%;
+    margin: 0 auto;
+    background-color: #71A9F7;
+}
+.articlecontain{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: .5em;
+}
+.article img{
+    width: 100%;
+}
+.article p, h3{
+    padding: .75em;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contactinfo{
+    font-family: 'Roboto', sans-serif;
+    padding: .5em;
+    justify-self: center;
+}
+.map{
+    display: none;
+}
+.social img{
+    display: inline-block;
+    border-radius: 3em;
+    width: 3em;
+    margin-right: 2em;
+    padding: .125em;
+    background-color: #1c263F;
+}
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #2D82B7;
+}
+.navigation {
+	list-style: none;
+    padding: 0.75rem;
+    margin-top:0rem;
+}
+.navigation li:first-child {
+    display: block;
+    align-content: center;
+}
+.responsive li:first-child {
+    display: none;
+}
+.navigation li:nth-child(2) {
+    display: none;
+}
+.responsive li:nth-child(2) {
+    display: block;
+    text-align: center;
+    float: none;
+}
+.navigation li {
+	display: none;
+}
+.responsive li {
+    display: block;
+    padding: .5rem;
+}
+nav ul li.active a {
+    background-color: #71A9F7;
+    color: #1c263F;
+}
+.navigation a {
+    display: block;
+    padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    border: white 1px solid;
+    border-radius: .5em;
+}
+.navigation a:hover {
+	color: white;
+	background-color: #1c263F;
+}
