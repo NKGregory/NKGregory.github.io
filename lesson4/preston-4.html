@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lesson#4 - Preston, ID - Nathan Gregory |WDD230</title>
+    <meta name='description' content='Lesson #4 - Preston Weather page for Nathan Gregory in WDD 230 at BYU-I'>
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+  </head>
+  <body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <section class="headings">
+          <h1>I'm Such a Snow it All</h1>
+          <!--<div>Wheather the Weather is hot, or Weather the Weather is not. We'll weather the weather whatever the weather, wheather we like it or not.</div>-->
+          <div class="subhead">I predict a 100% Chance of Weather</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#x2630; Menu</a></li>
+            <li><a class="hamclose" href="#">&#8593; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul> 
+    </nav>  
+    <main>
+      <h2>Preston Idaho</h2>
+      <div class="contentbox">Hero image/ Weather Summary</div>
+      <div class="contentbox">5 Day Forcast</div>
+      <div class="contentbox">Article</div>
+      <div class="contentbox">Contact Information</div>
+      <script src="js/nav.js"></script>
+    </main>
+    <footer>
+      <p>&copy; <span id='currentyear'></span> I'm Such a Snow it All | Nathan Gregory
+        <br>
+        <a href='/index.html'>Portal</a> | <span id='currentdate'></span></p>
+    </footer>
+    <script src='js/date.js'></script>
+  </body>
+</html>
