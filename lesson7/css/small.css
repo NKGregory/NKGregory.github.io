@@ -187,3 +187,16 @@ nav ul li.active a {
 	color: white;
 	background-color: #1c263F;
 }
+/*Gallery Specific CSS*/
+figure img {
+    border: 1px solid black;
+    padding: 1px;
+    filter: blur(0em);
+    transition: filter 2s;
+}
+
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+figure:hover {box-shadow: 0 0 50px #333;}
