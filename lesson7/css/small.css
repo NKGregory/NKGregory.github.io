@@ -82,7 +82,7 @@ nav {
     padding: .5rem;
 }
 nav ul li.active a {
-    background-color: #71A9F7;
+    background-color: white;
     color: #1c263F;
 }
 .navigation a {
@@ -90,7 +90,8 @@ nav ul li.active a {
     padding: 0.5rem;
 	text-align: center;
 	text-decoration: none;
-    color: white;
+    background-color: #71A9F7;
+    color: #1c263F;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     border: white 1px solid;
@@ -220,3 +221,7 @@ figcaption{
 figure:hover {
     box-shadow: 0 0 0 0 white;
 }
+
+
+background-color: #71A9F7;
+color: #1c263F;
