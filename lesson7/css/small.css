@@ -38,10 +38,10 @@ footer{
     padding-top: .25em;
     padding-bottom: .25em;
 }
-.portallink{
+.link{
     color: white;
 }
-.portallink:hover{
+.link:hover{
     background-color: white;
     color: #1c263F;
 }
@@ -112,8 +112,8 @@ nav ul li.active a {
 /*Preston Specific CSS*/
 #bannertext{
     display: block;
-    background-color: #1c263F;
-    color: white;
+    background-color: #71A9F7;
+    color: #1c263F;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     width: 100%;
@@ -211,7 +211,6 @@ nav ul li.active a {
     width: 100%;
 }
 figure img {
-    border: 1px solid black;
     filter: blur(0em);
     transition: filter 2s;
 }
@@ -219,8 +218,9 @@ figure img[data-src] {
     filter: blur(0.2em);
 }
 figure{
-    padding: 1px; 
     width: 100%;
+    border: 1px solid black;
+    border-radius: 0 0 .5em .5em;
 }
 figcaption{
     font-family: 'Roboto', sans-serif;

@@ -1,6 +1,6 @@
 function insertbanner() {
     let today = new Date();
-    if(today.getDay() == 5){
+    if(today.getDay() == 6){
         const bannerhide = document.getElementById('bannertext');
         {bannerhide.classList.remove('notfriday')}
     } else {
