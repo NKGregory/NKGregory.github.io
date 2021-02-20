@@ -38,12 +38,19 @@ footer{
     padding-top: .25em;
     padding-bottom: .25em;
 }
-.link{
+.portallink{
     color: white;
 }
-.link:hover{
+.portallink:hover{
     background-color: white;
     color: #1c263F;
+}
+.link{
+    color: black;
+}
+.link:hover{
+    background-color: #1c263F;
+    color: white;
 }
 h2{
     font-family: 'Roboto', sans-serif;
