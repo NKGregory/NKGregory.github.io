@@ -94,4 +94,9 @@
 		width: 2em;
 		margin-right: 1em;
 	}
+	/*Gallery Specific CSS*/
+	.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	}
 }

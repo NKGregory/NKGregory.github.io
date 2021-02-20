@@ -52,3 +52,7 @@ img {
 img[data-src] {
     filter: blur(0.2em);
 }
+
+img:hover {
+    box-shadow: 0 0 50px #333;
+}

@@ -6,19 +6,6 @@ header{
     padding-top: .5em;
     padding-bottom: .5em;
 }
-#bannertext{
-    display: block;
-    background-color: #1c263F;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    width: 100%;
-    padding: .25em;
-    text-align: center;
-}
-#bannertext.notfriday{
-    display: none;
-}
 header img{
     background-color: white;
     border-radius: 3.5em 0 3.5em 0;
@@ -61,6 +48,71 @@ body{
 main{
     max-width: 1100px;
     margin: 0 auto;
+}
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #2D82B7;
+}
+.navigation {
+	list-style: none;
+    padding: 0.75rem;
+    margin-top:0rem;
+}
+.navigation li:first-child {
+    display: block;
+    align-content: center;
+}
+.responsive li:first-child {
+    display: none;
+}
+.navigation li:nth-child(2) {
+    display: none;
+}
+.responsive li:nth-child(2) {
+    display: block;
+    text-align: center;
+    float: none;
+}
+.navigation li {
+	display: none;
+}
+.responsive li {
+    display: block;
+    padding: .5rem;
+}
+nav ul li.active a {
+    background-color: #71A9F7;
+    color: #1c263F;
+}
+.navigation a {
+    display: block;
+    padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    border: white 1px solid;
+    border-radius: .5em;
+}
+.navigation a:hover {
+	color: white;
+	background-color: #1c263F;
+}
+/*Preston Specific CSS*/
+#bannertext{
+    display: block;
+    background-color: #1c263F;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    padding: .25em;
+    text-align: center;
+}
+#bannertext.notfriday{
+    display: none;
 }
 .herocontain {
     margin: 0 auto;
@@ -136,67 +188,28 @@ main{
     padding: .125em;
     background-color: #1c263F;
 }
-nav {
-	margin: 0 auto;
-	max-width: 100%;
-	background-color: #2D82B7;
-}
-.navigation {
-	list-style: none;
-    padding: 0.75rem;
-    margin-top:0rem;
-}
-.navigation li:first-child {
-    display: block;
-    align-content: center;
-}
-.responsive li:first-child {
-    display: none;
-}
-.navigation li:nth-child(2) {
-    display: none;
-}
-.responsive li:nth-child(2) {
-    display: block;
-    text-align: center;
-    float: none;
-}
-.navigation li {
-	display: none;
-}
-.responsive li {
-    display: block;
-    padding: .5rem;
-}
-nav ul li.active a {
-    background-color: #71A9F7;
-    color: #1c263F;
-}
-.navigation a {
-    display: block;
-    padding: 0.5rem;
-	text-align: center;
-	text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    border: white 1px solid;
-    border-radius: .5em;
-}
-.navigation a:hover {
-	color: white;
-	background-color: #1c263F;
-}
 /*Gallery Specific CSS*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 5px;
+    align-content: center;
+    max-width: 1100px;
+    text-align: center;
+}
+.gallery img{
+    width: 100%;
+}
 figure img {
     border: 1px solid black;
-    padding: 1px;
     filter: blur(0em);
     transition: filter 2s;
 }
-
 figure img[data-src] {
     filter: blur(0.2em);
 }
-
-figure:hover {box-shadow: 0 0 50px #333;}
+figure{
+    padding: 1px; 
+    width: 100%;
+}
