@@ -194,8 +194,8 @@ nav ul li.active a {
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 5px;
-    align-content: center;
-    max-width: 1100px;
+    max-width: 1000px;
+    margin:0 auto 0 0;
     text-align: center;
 }
 .gallery img{
@@ -212,4 +212,11 @@ figure img[data-src] {
 figure{
     padding: 1px; 
     width: 100%;
+}
+figcaption{
+    font-family: 'Roboto', sans-serif;
+    padding: 3px;
+}
+figure:hover {
+    box-shadow: 0 0 0 0 white;
 }
