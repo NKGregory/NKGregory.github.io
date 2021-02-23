@@ -1,0 +1,38 @@
+table, th, td, caption {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+  }
+  #tablebuild {
+      width: 30%;
+  
+  }
+  #tablebuild tr:nth-child(even) {
+    background-color:#e7f0ed;
+  }
+  #tablebuild tr:nth-child(odd) {
+    background-color:#e7ffed;
+  }
+  #tablebuild th {
+      background-color: #628ca6;
+      color: white;
+  }
+  #tablebuild caption{
+      background-color: #7fb9c2;
+      color: black;
+      font-weight: bold;
+      font-size: x-large;
+  }
+  .highlight {
+      background-color: #628ca6;
+      color: white;
+  }
+  .special {
+      font-style: italic;
+  }
+  .foot {
+      background-color: #7fb9c2;
+      color: black;
+      font-size: small;
+  }
