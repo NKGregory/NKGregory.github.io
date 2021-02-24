@@ -9,6 +9,7 @@ table, th, td, caption {
   }
   #tablebuild {
       width: 25%;
+      box-shadow: 10px 10px 5px #628ca6;
   }
   #tablebuild tr:nth-child(even) {
     background-color:#e7f0ed;
