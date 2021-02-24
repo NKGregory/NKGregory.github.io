@@ -4,10 +4,11 @@ table, th, td, caption {
     text-align: center;
     padding: 5px;
     margin: 0 auto;
-    font-size: 1.25em;
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
   }
   #tablebuild {
-      width: 40%;
+      width: 25%;
   }
   #tablebuild tr:nth-child(even) {
     background-color:#e7f0ed;
