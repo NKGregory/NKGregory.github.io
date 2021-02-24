@@ -3,10 +3,11 @@ table, th, td, caption {
     border-collapse: collapse;
     text-align: center;
     padding: 5px;
+    margin: 0 auto;
+    font-size: 1.25em;
   }
   #tablebuild {
-      width: 30%;
-  
+      width: 40%;
   }
   #tablebuild tr:nth-child(even) {
     background-color:#e7f0ed;
