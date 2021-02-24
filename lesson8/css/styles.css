@@ -9,7 +9,7 @@ table, th, td, caption {
   }
   #tablebuild {
       width: 25%;
-      box-shadow: 10px 10px 5px #628ca6;
+      box-shadow: 5px 5px 5px #628ca6;
   }
   #tablebuild tr:nth-child(even) {
     background-color:#e7f0ed;
@@ -17,13 +17,13 @@ table, th, td, caption {
   #tablebuild tr:nth-child(odd) {
     background-color:#e7ffed;
   }
-  #tablebuild th {
+  tbody tr th {
       background-color: #628ca6;
       color: white;
   }
-  #tablebuild caption{
+ thead tr th{
+      display: table-cell;
       background-color: #7fb9c2;
-      color: black;
       font-weight: bold;
       font-size: x-large;
   }
