@@ -31,10 +31,10 @@ table, th, td, caption {
       background-color: #628ca6;
       color: white;
   }
-  .special {
-      font-style: italic;
+  #tablebuild tr:nth-child(6) td:nth-child(1) {
+    font-style: italic;
   }
-  .foot {
+  tfoot tr td{
       background-color: #7fb9c2;
       color: black;
       font-size: small;
