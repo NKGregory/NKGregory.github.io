@@ -25,7 +25,6 @@
 	}
 	/*Gallery Specific CSS*/
 	.gallery {
-		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 	figure:hover {
