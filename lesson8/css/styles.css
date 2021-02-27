@@ -8,10 +8,10 @@ table, th, td, caption {
     font-family: 'Ubuntu', sans-serif;
   }
   #tablebuild {
-      width: 25%;
-      box-shadow: 5px 5px 5px #628ca6;
+      width: 275px;
+      box-shadow: 5px 5px 10px #628ca6;
   }
-  #tablebuild tr:nth-child(even) {
+  tbody{
     background-color:#e7f0ed;
   }
   #tablebuild tr:nth-child(odd) {
@@ -30,9 +30,6 @@ table, th, td, caption {
   .highlight {
       background-color: #628ca6;
       color: white;
-  }
-  #tablebuild tr:nth-child(6) td:nth-child(1) {
-    font-style: italic;
   }
   tfoot tr td{
       background-color: #7fb9c2;
