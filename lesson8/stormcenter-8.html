@@ -71,7 +71,23 @@
             </datalist>
           </label>
           <label>Storm Severity:
-            <input type="text" name="stormseverity" pattern="[A-Za-z]{4,}" required>
+            <input type="range" size="2" name="stormseverity" 
+            min="0" max="10" value="5" step="1" list="tickmarks"
+            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <span id="ratingvalue">5</span>
+          <datalist id="tickmarks">
+            <option value="0">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+          </datalist>
           </label>
           <label>Storm Region:
             <select name="stormregion">
