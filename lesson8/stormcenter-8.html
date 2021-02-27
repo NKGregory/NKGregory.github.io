@@ -38,19 +38,19 @@
       <form action="thanks.html" method="get">
         <fieldset>
           <legend>Your Info</legend>
-          <label for="frmNameA">Full Name*
+          <label class="top" for="frmNameA">Full Name*
             <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}" 
             required autofocus>
           </label>
-          <label for="frmEmailA">Email
+          <label class="top" for="frmEmailA">Email
             <input type="email" name="email" id="frmEmailA" placeholder="example@domain.com" 
             autocomplete="email">
           </label>
-          <label for="frmPhoneNumA">Phone*
+          <label class="top" for="frmPhoneNumA">Phone*
             <input type="tel" name="phone" id="frmPhoneNumA" 
             autocomplete="tel" required>
           </label>
-          <label for="frmZipS">Zip*
+          <label class="top" for="frmZipS">Zip*
             <input name="ship-zip" id="frmZipS" placeholder="#####" 
             autocomplete="shipping postal-code" pattern="[0-9]{5}" required>
           </label>
@@ -58,7 +58,7 @@
         <fieldset>
           <legend>Storm Info</legend>
           <label>Storm Date:
-            <input type="date" name="stormdate" placeholder="mm/dd/yyyy" required>
+            <input type="date" name="stormdate" placeholder="mm/dd/yyyy">
           </label>
           <label>Storm Type:
             <input list="stormtypes" name="stormtype" id="stormtype" placeholder="Raining Cats and Dogs">
@@ -104,10 +104,10 @@
         </fieldset>
         <fieldset>
           <label>Any Additional Info or Comments? 
-            <input type="text" name="fullname" pattern="[A-Za-z]{4,}" required>
+            <input type="text" name="comments" placeholder="Enter Comments here...">
           </label>
         </fieldset>
-        <input type="submit" value="Report a Storm">
+        <input class="submitBtn" type="submit" value="Report a Storm">
       </form>
     </main>
     <footer>
@@ -115,6 +115,7 @@
         <br>
         <a class = "portallink" href='/index.html'>Portal</a> | <span id='currentdate'></span></p>
     </footer>
+    <script src="js/stormrating.js"></script>
     <script src='js/date.js'></script>
   </body>
 </html>
