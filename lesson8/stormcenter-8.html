@@ -38,22 +38,60 @@
       <form action="thanks.html" method="get">
         <fieldset>
           <legend>Your Info</legend>
-          <label>Full Name:
-            <input type="text" name="fullname" pattern="[A-Za-z]{4,}" required>
+          <label for="frmNameA">Full Name*
+            <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}" 
+            required autofocus>
           </label>
-          <label>Email:
-            <input type="text" name="fullname" pattern="[A-Za-z]{4,}" required>
+          <label for="frmEmailA">Email
+            <input type="email" name="email" id="frmEmailA" placeholder="example@domain.com" 
+            autocomplete="email">
           </label>
-          <label>Phone Number:
-            <input type="text" name="fullname" pattern="[A-Za-z]{4,}" required>
+          <label for="frmPhoneNumA">Phone*
+            <input type="tel" name="phone" id="frmPhoneNumA" 
+            autocomplete="tel" required>
           </label>
-          <label>Zipcode:
-            <input type="text" name="fullname" pattern="[A-Za-z]{4,}" required>
+          <label for="frmZipS">Zip*
+            <input name="ship-zip" id="frmZipS" placeholder="#####" 
+            autocomplete="shipping postal-code" pattern="[0-9]{5}" required>
           </label>
         </fieldset>
         <fieldset>
-
+          <legend>Storm Info</legend>
+          <label>Storm Date:
+            <input type="date" name="stormdate" placeholder="mm/dd/yyyy" required>
+          </label>
+          <label>Storm Type:
+            <input list="stormtypes" name="stormtype" id="stormtype" placeholder="Raining Cats and Dogs">
+            <datalist id="stormtypes">
+              <option value="Flash Flood">
+              <option value="Hail">
+              <option value="Hurricane">
+              <option value="Thunderstorm">
+              <option value="Tornado">
+            </datalist>
+          </label>
+          <label>Storm Severity:
+            <input type="text" name="stormseverity" pattern="[A-Za-z]{4,}" required>
+          </label>
+          <label>Storm Region:
+            <select name="stormregion">
+              <option value="">Choose Region...</option>
+              <option value="Preston">Preston</option>
+              <option value="SodaSprings">Soda Springs</option>
+              <option value="FishHaven">Fish Haven</option>
+            </select>
+          </label>
+          <div>Are you in danger?</div>
+            <label><input type="radio" name="danger" value="yes">Yes</label>
+            <label><input type="radio" name="danger" value="no">No</label>
+            <label><input type="radio" name="danger" value="maybe">Maybe</label>
         </fieldset>
+        <fieldset>
+          <label>Any Additional Info or Comments? 
+            <input type="text" name="fullname" pattern="[A-Za-z]{4,}" required>
+          </label>
+        </fieldset>
+        <input type="submit" value="Report a Storm">
       </form>
     </main>
     <footer>
