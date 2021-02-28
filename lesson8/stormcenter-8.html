@@ -59,7 +59,7 @@
         <fieldset>
           <legend>Storm Information</legend>
           <label class="top">Storm Date:
-            <input type="date" name="stormdate" placeholder="mm/dd/yyyy">
+            <input type="date" name="stormdate">
           </label>
           <label class="top">Storm Type:
             <input list="stormtypes" name="stormtype" id="stormtype" placeholder="Raining Cats and Dogs">
@@ -72,7 +72,7 @@
             </datalist>
           </label>
           <label class="top">Storm Severity:
-            <input type="range" size="2" name="stormseverity" 
+            <input type="range" name="stormseverity" 
             min="0" max="10" value="5" step="1" list="tickmarks"
             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
             <span id="ratingvalue">5</span>
