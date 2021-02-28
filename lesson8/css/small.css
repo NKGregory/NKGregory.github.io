@@ -285,8 +285,8 @@ form input.radio{
 form input.submitBtn {
     border: none;
     border-radius: .5em;
-    background-color: #2D82B7;
-    color: #1c263F;
+    background-color: #1c263F;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
     padding: .75em 1.5em;
