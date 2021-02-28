@@ -240,7 +240,7 @@ figure:hover {
 form p.reqtext{
     font-family: 'Roboto', sans-serif;
     float: right;
-    font-size: .65em;
+    font-size: .75em;
     margin-right: 1em;
 }
 form fieldset{
