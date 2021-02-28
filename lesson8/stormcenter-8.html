@@ -37,8 +37,9 @@
       <h2>Storm Center</h2>
       <form action="thanks.html" method="get">
         <fieldset>
-          <legend>Your Info</legend>
-          <label class="top" for="frmNameA">Full Name*
+          <legend>Your Information</legend>
+          <p class="reqtext">* Indicates Required Field</p>
+          <label class="top" for="frmNameA">*Full Name
             <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}" 
             required autofocus>
           </label>
@@ -46,21 +47,21 @@
             <input type="email" name="email" id="frmEmailA" placeholder="example@domain.com" 
             autocomplete="email">
           </label>
-          <label class="top" for="frmPhoneNumA">Phone*
+          <label class="top" for="frmPhoneNumA">*Phone
             <input type="tel" name="phone" id="frmPhoneNumA" 
             autocomplete="tel" required>
           </label>
-          <label class="top" for="frmZipS">Zip*
+          <label class="top" for="frmZipS">*Zipcode
             <input name="ship-zip" id="frmZipS" placeholder="#####" 
             autocomplete="shipping postal-code" pattern="[0-9]{5}" required>
           </label>
         </fieldset>
         <fieldset>
-          <legend>Storm Info</legend>
-          <label>Storm Date:
+          <legend>Storm Information</legend>
+          <label class="top">Storm Date:
             <input type="date" name="stormdate" placeholder="mm/dd/yyyy">
           </label>
-          <label>Storm Type:
+          <label class="top">Storm Type:
             <input list="stormtypes" name="stormtype" id="stormtype" placeholder="Raining Cats and Dogs">
             <datalist id="stormtypes">
               <option value="Flash Flood">
@@ -70,7 +71,7 @@
               <option value="Tornado">
             </datalist>
           </label>
-          <label>Storm Severity:
+          <label class="top">Storm Severity:
             <input type="range" size="2" name="stormseverity" 
             min="0" max="10" value="5" step="1" list="tickmarks"
             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
@@ -89,7 +90,7 @@
             <option value="10">
           </datalist>
           </label>
-          <label>Storm Region:
+          <label class="top">Storm Region:
             <select name="stormregion">
               <option value="">Choose Region...</option>
               <option value="Preston">Preston</option>
@@ -98,13 +99,13 @@
             </select>
           </label>
           <div>Are you in danger?</div>
-            <label><input type="radio" name="danger" value="yes">Yes</label>
-            <label><input type="radio" name="danger" value="no">No</label>
-            <label><input type="radio" name="danger" value="maybe">Maybe</label>
+            <label class="sidexside"><input class="radio" type="radio" name="danger" value="yes">Yes</label>
+            <label class="sidexside"><input class="radio" type="radio" name="danger" value="no">No</label>
+            <label class="sidexside"><input class="radio" type="radio" name="danger" value="maybe">Maybe</label>
         </fieldset>
         <fieldset>
-          <label>Any Additional Info or Comments? 
-            <input type="text" name="comments" placeholder="Enter Comments here...">
+          <label class="top">Any Additional Info or Comments? 
+            <textarea name="comments" placeholder="Enter Comments here..."></textarea>
           </label>
         </fieldset>
         <input class="submitBtn" type="submit" value="Report a Storm">
@@ -116,6 +117,7 @@
         <a class = "portallink" href='/index.html'>Portal</a> | <span id='currentdate'></span></p>
     </footer>
     <script src="js/stormrating.js"></script>
+    <script src="js/nav.js"></script>
     <script src='js/date.js'></script>
   </body>
 </html>

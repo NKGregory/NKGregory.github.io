@@ -237,45 +237,73 @@ figure:hover {
     box-shadow: 0 0 0 0 white;
 }
 /*Stormcenter Specific CSS*/
+form p.reqtext{
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    font-size: .65em;
+    margin-right: 1em;
+}
 form fieldset{
+    font-family: 'Roboto', sans-serif;
     margin: 2rem 0;
-    border: 1px solid red;
+    border: 1px solid #1c263F;
     border-radius: 10px;
-    padding: .5rem 2%;
+    padding: .5rem 2% 2em;
+    background-color: #71A9F7;
 }
 form legend{
-    color: blue;
+    color: White;
+    background-color:  #1c263F;
+    border-radius: .5em;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
 form label.top, form div{
     display: block;
     padding-top: 1rem;
-    color: red;
-    font-size: .75em;
+    color: #1c263F;
+    font-size: .85em;
 }
-form label.top input{
+form label.top input,form label.top select, form textarea{
     display: block;
     font-size: 1em;
-    border: 1px solid blue;
+    border: 1px solid #1c263F;
     border-radius: .25em;
-    padding: .75em;
-    color: green;
-    width: 100%;
-    background-color: grey;
+    padding: .85em;
+    color: #1c263F;
+    width: 92%;
+    background-color: #c6D8ff;
+}
+form label.sidexside{
+    display: block;
+    padding: .75rem 0;
+    color: #1c263F;
+}
+form input.radio{
+    margin-right: .75em;
 }
 form input.submitBtn {
     border: none;
     border-radius: .5em;
-    background-color: pink;
-    color: purple;
+    background-color: #2D82B7;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
     padding: .75em 1.5em;
     margin: 0 0 2rem 2%;
-    width: 96%;
+    width: 92%;
+}
+form label.top input:optional{
+    border-left: #1c263F solid 1px;
 }
 form label.top input:required{
-    border-left: red solid 6px;
+    border-left: red solid 2px;
 }
 form label.top input:required:valid{
-    border-left: green solid 6px;
+    border-left: green solid 2px;
+}
+.thanks{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    text-align: center;
 }
