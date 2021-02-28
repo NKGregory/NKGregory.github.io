@@ -30,4 +30,8 @@
 	figure:hover {
 		box-shadow: 0 0 50px #333;
 	}
+	/*Stormcenter Specific CSS*/
+	form label.sidexside{
+		padding: .4rem 0;
+	}
 }
