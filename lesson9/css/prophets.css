@@ -7,7 +7,7 @@ main{
 .cards {    
     display: grid;
     grid-template-columns: 1fr;
-    gap: .5em;
+    gap: .25em;
     text-align: center;
 }
 
