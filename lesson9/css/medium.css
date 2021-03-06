@@ -113,4 +113,8 @@
 		max-width: 30%;
 		margin: 2rem 35%;
 	}
+	/*Homepage Specific CSS*/
+	.cards{
+    grid-template-columns: repeat(2, 1fr);
+	}
 }

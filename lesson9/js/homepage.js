@@ -8,7 +8,21 @@ fetch(requestURL)
     //console.table(jsonObject);  // temporary checking for valid response and data parsing
 
     const towns = jsonObject['towns'];
-
+    //Create a method to sort towns alphabettically
+    function GetSortOrder(prop) {    
+        return function(a, b) {    
+            if (a[prop] > b[prop]) {    
+                return 1;    
+            } else if (a[prop] < b[prop]) {    
+                return -1;    
+            }    
+            return 0;    
+        }    
+    }    
+        
+    towns.sort(GetSortOrder("name"));
+    //console.log(towns)
+    // now that I know the order, print the towns I want. Use CSS to put Fish Haven last
     for (let i = 0; i < towns.length; i++ ) {
         if(towns[i].name === "Preston" || towns[i].name === "Fish Haven" || towns[i].name === "Soda Springs") {
 
@@ -36,29 +50,3 @@ fetch(requestURL)
         }
     }
   });
-
-   // for (let i = 0; i < prophets.length; i++ ) {
-       // let card = document.createElement('section');
-       // let h2 = document.createElement('h2');
-        //let birthdate = document.createElement('p')
-       // let birthplace = document.createElement('p')
-        //let picture = document.createElement('img')
-            
-        //h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-       // birthdate.textContent = 'Date of Birth: '+ prophets[i].birthdate;
-        //birthplace.textContent = 'Place of Birth: ' + prophets[i].birthplace;
-        //picture.setAttribute('src', prophets[i].imageurl);
-        //picture.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + '-' + i)
-
-
-       // card.appendChild(h2);
-        //card.appendChild(birthdate);
-        //card.appendChild(birthplace);
-        //card.appendChild(picture);
-
-
-        //document.querySelector('div.cards').appendChild(card);
- // }
-//});
-
-//towns.filter(town=>town.name === "Preston");

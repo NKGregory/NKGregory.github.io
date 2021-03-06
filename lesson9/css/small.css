@@ -307,3 +307,17 @@ form label.top input:required:valid{
     font-size: 1.1em;
     text-align: center;
 }
+/*Homepage Specific CSS*/
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+}
+.cards section{
+    background-color:#71A9F7;
+}
+.cards section:first-child{
+    order: +1;
+}
