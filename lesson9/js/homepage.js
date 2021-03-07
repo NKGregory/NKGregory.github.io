@@ -34,6 +34,7 @@ fetch(requestURL)
             let currentPopulation = document.createElement('p');
             let averageRainfall = document.createElement('p');
             let image = document.createElement('img');
+            let text = document.createElement('div');
 
             name.textContent = towns[i].name;
             motto.textContent = towns[i].motto;
@@ -41,13 +42,16 @@ fetch(requestURL)
             currentPopulation.textContent = 'Current Population: '+ towns[i].currentPopulation;
             averageRainfall.textContent = 'Average Annual Rainfall: '+ towns[i].averageRainfall + ' inches';
             image.setAttribute('src', "images/index/" + towns[i].photo);
+            text.setAttribute('id', 'text');
 
-            card.appendChild(name);
-            card.appendChild(motto);
-            card.appendChild(yearFounded);
-            card.appendChild(currentPopulation);
-            card.appendChild(averageRainfall);
+            card.appendChild(text);
             card.appendChild(image);
+            text.appendChild(name);
+            text.appendChild(motto);
+            text.appendChild(yearFounded);
+            text.appendChild(currentPopulation);
+            text.appendChild(averageRainfall);
+
 
             document.querySelector('div.cards').appendChild(card);
         }
