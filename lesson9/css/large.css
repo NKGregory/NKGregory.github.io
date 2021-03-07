@@ -34,8 +34,8 @@
 	form label.sidexside{
 		padding: .4rem 0;
 	}
-		/*Homepage Specific CSS*/
-		.cards{
-			grid-template-columns: repeat(3, 1fr);
-			}
+	/*Homepage Specific CSS*/
+	.cards{
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
