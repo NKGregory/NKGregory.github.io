@@ -308,6 +308,31 @@ form label.top input:required:valid{
     text-align: center;
 }
 /*Homepage Specific CSS*/
+.indexherocontain img{
+    width: 100%;
+    box-shadow: 10px 10px 20px;
+}
+.indexherocontain {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1100px;
+    width: 85%;
+    justify-content: center;
+}
+.dadjoke{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 5em;
+    left: 3em;
+    background-color: #2D82B799;
+    color: #1c263F;
+    text-align: center;
+    border: 1px solid black;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+    height: 8em;
+    width: 75%; 
+}
 .cards{
     display: grid;
     grid-template-columns: 1fr;
@@ -343,30 +368,12 @@ form label.top input:required:valid{
     margin: 1em;
     box-shadow: 10px 10px 20px;
 }
-.indexherocontain picture{
-    width: 100%;
-}
-.indexherocontain img{
-    width: 100%;
-}
-.indexherocontain {
+.indexcontact{
     margin: 0 auto;
-    position: relative;
-    max-width: 1100px;
-    width: 85%;
-    justify-content: center;
+    text-align: center;
+    max-width: 500px;
 }
-.dadjoke{
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    top: 5em;
-    left: 3em;
-    background-color: #2D82B799;
-    color: white;
-    border: 1px solid black;
-    padding: .5rem;
-    box-shadow: 0 0 30px #777;
-    height: 5em;
-    width: 75%;
-    
+.indexcontactinfo{
+    padding: .5em;
+    margin-right: .25em;
 }
