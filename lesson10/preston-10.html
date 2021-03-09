@@ -15,6 +15,7 @@
     <script src="js/banner.js"></script>
   </head>
   <body onload="insertbanner()">
+
     <div id="bannertext" class=""><h3>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h3></div>
     <header>
         <img src="images/logo.png" alt="Snow it All Logo">
@@ -46,8 +47,8 @@
         </picture>
         <div class="weathersummary">
           <h3>Weather Summary</h3>
-          <p>Currently: Sunny</p>
-          <p>Temperature: <span id="current-temp">72</span>&#176; F</p>
+          <p>Currently: <span id="currently">Sunny</span></p>
+          <p>Temperature: <span id="current-temp">42</span>&#176; F</p>
           <p>Humidity: <span id="humidity">69</span>%</p>
           <p>Precipitation: 0 inches</p>
           <p>Wind Speed: <span id="wind-speed">5</span> mph</p>
@@ -87,7 +88,7 @@
       </div>
       <div class="article">
         <div class="articlecontain">
-          <img src="images/article-pic.jpg" alt="article image">
+          <img src="images/preston/article-pic.jpg" alt="article image">
         </div>
         <h3>Founders Day Fresco</h3>
         <p class="byline">by Janica Juarez</p>
@@ -101,7 +102,7 @@
         </p>
       </div>
       <div class="contact">
-        <img class="map" src="images/preston-map.JPG" alt="Map">
+        <img class="map" src="images/preston/preston-map.JPG" alt="Map">
         <div class="contactinfo">
           <h3>Contact Us!</h3>
           <hr>
@@ -118,17 +119,17 @@
           </div>
         </div>
       </div>
-      <script src="js/nav.js"></script>
-      <script src="js/weatherapi.js"></script> 
-      <script src="js/windchill.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-      <script src="js/webfontload.js"></script> 
     </main>
     <footer>
       <p>&copy; <span id='currentyear'></span> I'm Such a Snow it All | Nathan Gregory
         <br>
         <a class = "portallink" href='/index.html'>Portal</a> | <span id='currentdate'></span></p>
     </footer>
+    <!--<script src="js/weatherapi.js"></script>-->
     <script src='js/date.js'></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script> 
   </body>
 </html>
