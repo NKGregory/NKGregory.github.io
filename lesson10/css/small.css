@@ -136,9 +136,6 @@ nav ul li.active a {
     max-width: 1100px;
     width: 85%;
 }
-.herocontain picture{
-    width: 100%;
-}
 .herocontain img{
     width: 100%;
 }
@@ -160,6 +157,8 @@ nav ul li.active a {
 .weathersummary h3{
     font-size: 70%;
     margin: 0;
+    margin-top: -1em;
+    margin-bottom: -1em;
     text-decoration: underline;
 }
 .forcast{
