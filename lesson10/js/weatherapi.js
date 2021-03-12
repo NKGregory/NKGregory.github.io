@@ -42,10 +42,11 @@ fetch(forecastapiURL)
         let temp = document.createElement('p')
 
         card.setAttribute('class', 'forcastday');
-
+        
+        day++;
         let d = new Date(ForecastDays[i].dt_txt);
         weekday.textContent = dayTitle[d.getDay()];
-        day++;
+        
 
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';  // note the concatenation
         const desc = jsObject.list[i].weather[0].description;  // note how we reference the weather array
