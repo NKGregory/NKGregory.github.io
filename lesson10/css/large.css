@@ -20,8 +20,9 @@
 	.navigation li:nth-child(2) {
 		display: none;
 	}
+	/*Preston Specific CSS*/
 	.weathersummary{
-		height: 250px;
+		height: 225px;
 	}
 	/*Gallery Specific CSS*/
 	.gallery {
