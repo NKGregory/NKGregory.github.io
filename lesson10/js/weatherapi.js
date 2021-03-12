@@ -34,7 +34,7 @@ fetch(forecastapiURL)
     const ForecastDays = jsObject.list.filter((element)=>element.dt_txt.includes('18:00:00'))
     //console.log(ForecastDays);
     const dayTitle = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    let day = 0
+    //let day = 0
     for (let i = 0; i < ForecastDays.length; i++ ) {
         let card = document.createElement('section');
         let weekday = document.createElement('p')
@@ -42,8 +42,8 @@ fetch(forecastapiURL)
         let temp = document.createElement('p')
 
         card.setAttribute('class', 'forcastday');
-        
-        day++;
+
+        //day++;
         let d = new Date(ForecastDays[i].dt_txt);
         weekday.textContent = dayTitle[d.getDay()];
         
