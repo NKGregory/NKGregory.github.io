@@ -33,6 +33,9 @@
 		max-width: 650px;
 		padding-bottom: 2em;
 	}
+	.datasource{
+		font-size: .75em;
+	}
 	.forcasttable{
 		margin: 0 auto;
 		display: flex;
