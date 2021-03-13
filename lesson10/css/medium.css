@@ -85,13 +85,17 @@
 	}
 	.contactinfo{
 		padding: .5em;
-		margin-right: .25em;
+		margin-left: 2em;
+		justify-self: left;
 	}
 	.map{
 		display: block;
-		width: 100%;
+		justify-self: right;
+		margin-right: 1em;
+		align-self: center;
+		width: 75%;
+		max-width: 400px;
 		margin-top: .5em;
-		padding: .5em;
 		border: 1px solid black;
 		border-radius: .25em;
 		box-shadow: .5em .25em #999;

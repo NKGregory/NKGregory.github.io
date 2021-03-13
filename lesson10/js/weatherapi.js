@@ -20,7 +20,7 @@ fetch(summaryapiURL)
   
   if (temp<=50 && speed>=3) {
       document.querySelector('#windchill').innerHTML = Math.round(windchill(temp,speed))+"&deg;"+" F";
-  } 
+  }
   })
   ;
 
@@ -34,7 +34,7 @@ fetch(forecastapiURL)
     const ForecastDays = jsObject.list.filter((element)=>element.dt_txt.includes('18:00:00'))
     //console.log(ForecastDays);
     const dayTitle = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    //let day = 0
+  
     for (let i = 0; i < ForecastDays.length; i++ ) {
         let card = document.createElement('section');
         let weekday = document.createElement('p')
@@ -43,11 +43,9 @@ fetch(forecastapiURL)
 
         card.setAttribute('class', 'forcastday');
 
-        //day++;
         let d = new Date(ForecastDays[i].dt_txt);
         weekday.textContent = dayTitle[d.getDay()];
         
-
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';  // note the concatenation
         const desc = jsObject.list[i].weather[0].description;  // note how we reference the weather array
         picture.setAttribute('src', imagesrc);  // focus on the setAttribute() method
