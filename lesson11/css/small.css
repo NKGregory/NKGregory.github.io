@@ -116,7 +116,7 @@ nav ul li.active a {
 	color: white;
 	background-color: #1c263F;
 }
-/*Preston Specific CSS*/
+/*Town Page Specific CSS*/
 #bannertext{
     display: block;
     background-color: #71A9F7;
@@ -164,6 +164,16 @@ nav ul li.active a {
 }
 .forcast{
     display: none;
+}
+.events{
+    font-family: 'Roboto', sans-serif;
+    background-color: #71A9F7;
+    border: 10px solid black;
+    border-radius: 1em;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2em;
 }
 .article{
     font-family: 'Roboto', sans-serif;
