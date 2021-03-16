@@ -24,7 +24,7 @@ fetch(requestURL)
     //console.log(towns)
     // now that I know the order, print the towns I want. Use CSS to put Fish Haven last
     for (let i = 0; i < towns.length; i++ ) {
-        if(towns[i].name === "Preston") {
+        if(towns[i].name === "Soda Springs") {
 
             let card = document.createElement('section');
        
