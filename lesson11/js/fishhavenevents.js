@@ -25,9 +25,6 @@ fetch(requestURL)
     // now that I know the order, print the towns I want. Use CSS to put Fish Haven last
     for (let i = 0; i < towns.length; i++ ) {
         if(towns[i].name === "Fish Haven") {
-
-            let card = document.createElement('section');
-       
             let event1 = document.createElement('p')
             let event2 = document.createElement('p')
             let event3 = document.createElement('p')
@@ -36,11 +33,9 @@ fetch(requestURL)
             event2.textContent = towns[i].events[1];
             event3.textContent = towns[i].events[2];
 
-            card.appendChild(event1);
-            card.appendChild(event2);
-            card.appendChild(event3);
-
-            document.querySelector('div.events').appendChild(card);
+            document.querySelector('div.events').appendChild(event1);
+            document.querySelector('div.events').appendChild(event2);
+            document.querySelector('div.events').appendChild(event3);
         }
     }
   });
