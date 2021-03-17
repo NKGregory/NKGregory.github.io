@@ -32,7 +32,7 @@ fetch(forecastapiURL)
   .then((jsObject) => {
     //console.log(jsObject);
     const ForecastDays = jsObject.list.filter((element)=>element.dt_txt.includes('18:00:00'))
-    console.log(ForecastDays);
+    //console.log(ForecastDays);
     const dayTitle = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   
     for (let i = 0; i < ForecastDays.length; i++ ) {
