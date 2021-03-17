@@ -170,7 +170,8 @@ nav ul li.active a {
     background-color: #71A9F7;
     border: 10px solid black;
     border-radius: 1em;
-    max-width: 500px;
+    width: 75%;
+    max-width: 300px;
     margin: 0 auto;
     text-align: center;
     margin-top: 2em;

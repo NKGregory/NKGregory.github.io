@@ -46,12 +46,12 @@ fetch(forecastapiURL)
         let d = new Date(ForecastDays[i].dt_txt);
         weekday.textContent = dayTitle[d.getDay()];
         
-        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';  // note the concatenation
-        const desc = jsObject.list[i].weather[0].description;  // note how we reference the weather array
+        const imagesrc = 'https://openweathermap.org/img/w/' + ForecastDays[i].weather[0].icon + '.png';  // note the concatenation
+        const desc = ForecastDays[i].weather[0].description;  // note how we reference the weather array
         picture.setAttribute('src', imagesrc);  // focus on the setAttribute() method
         picture.setAttribute('alt', desc);
 
-        temp.innerHTML = Math.round(jsObject.list[i].main.temp)+"&deg;"+" F";
+        temp.innerHTML = Math.round(ForecastDays[i].main.temp)+"&deg;"+" F";
 
         card.appendChild(weekday);
         card.appendChild(picture);
