@@ -143,8 +143,8 @@ nav ul li.active a {
 .weathersummary{
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 15px;
+    left: 15px;
     height: 80%;
     background-color: #1c263F99;
     color: white;
