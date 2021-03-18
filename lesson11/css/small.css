@@ -145,21 +145,22 @@ nav ul li.active a {
     position: absolute;
     top: 15px;
     left: 15px;
-    height: 80%;
+    height: 75%;
     background-color: #1c263F99;
     color: white;
     border: 1px solid black;
     padding: .5rem;
     box-shadow: 0 0 30px #777;
+    overflow: scroll;
 }
 .weathersummary p{
-    font-size: 70%;
+    font-size: 100%;
 }
 .weathersummary h3{
-    font-size: 70%;
+    font-size: 100%;
     margin: 0;
-    margin-top: -1.25em;
-    margin-bottom: -1.25em;
+    margin-top: -.5em;
+    margin-bottom: -1em;
     text-decoration: underline;
 }
 .forcast{
