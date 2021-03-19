@@ -174,7 +174,7 @@ nav ul li.active a {
     font-family: 'Roboto', sans-serif;
     background-color: #2D82B7;
     border: 5px solid black;
-    border-radius: 1em;
+    box-shadow: 10px 10px 20px;
     width: 75%;
     max-width: 500px;
     margin: 0 auto;
