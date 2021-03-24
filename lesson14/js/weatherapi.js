@@ -1,0 +1,41 @@
+const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=41.8365135147246&lon=-111.8326758061393&units=imperial&exclude=minutely,hourly&appid=bacc274594cd208ae1a91c3d1f3d649c";
+
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+
+    document.getElementById('current-description').textContent = jsObject.current.weather[0].description;
+    document.getElementById('current-temp').textContent = Math.round(jsObject.current.temp);
+    document.getElementById('humidity').textContent = jsObject.current.humidity;
+
+    const weekDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const ForecastDays = jsObject.daily.slice(1,4)
+    console.log(ForecastDays)
+    for (let i = 0; i < ForecastDays.length; i++ ) {
+        let card = document.createElement('section');
+        let weekday = document.createElement('p')
+        let picture = document.createElement('img')
+        let temp = document.createElement('p')
+
+        card.setAttribute('class', 'forcastday');
+
+        let unix = (ForecastDays[i].dt)*1000
+        let d = new Date(unix)
+
+        weekday.textContent = weekDay[d.getDay()];
+        
+        const imagesrc = 'https://openweathermap.org/img/w/' + ForecastDays[i].weather[0].icon + '.png';  // note the concatenation
+        const desc = ForecastDays[i].weather[0].description;  // note how we reference the weather array
+        picture.setAttribute('src', imagesrc);  // focus on the setAttribute() method
+        picture.setAttribute('alt', desc);
+
+      temp.innerHTML = Math.round(ForecastDays[i].temp.day)+"&deg;"+" F";
+
+        card.appendChild(weekday);
+        card.appendChild(picture);
+        card.appendChild(temp);
+
+        document.querySelector('div.forcast').appendChild(card);
+    }
+  });

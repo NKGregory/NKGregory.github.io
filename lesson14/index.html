@@ -30,12 +30,17 @@
         </ul> 
     </nav>  
     <main>
- 
+        <h3>Weather Summary</h3>
+        <p>Temperature: <span id="current-temp"></span>&#176; F</p>
+        <p>Currently: <span id="current-description"></span></p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <div class="forcast"></div>
     </main>
     <footer>
       <p>&copy; <span id='currentyear'></span> Smithfield City | Nathan Gregory</p>
       <p class="updateline">Last Updated: <span id="lastupdate"></span></p>
     </footer>
     <script src="/lesson1/js/date.js"></script>
+    <script src="js/weatherapi.js"></script>
   </body>
 </html>
