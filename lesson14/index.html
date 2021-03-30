@@ -7,34 +7,65 @@
     <meta name='description' content='Lesson #14 - Chamber of Commerce Home page for Nathan Gregory in WDD 230 at BYU-I'>
     <!--<link rel="shortcut icon" href="favicon.ico">-->
     <link rel='stylesheet' href='css/normalize.css'>
-    <!--<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato&display=swap" rel="stylesheet">-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='css/small.css'>
     <link rel='stylesheet' href='css/medium.css'>
     <link rel='stylesheet' href='css/large.css'>
   </head>
   <body>
     <header>
-        <img src="#" alt="Logo">
-        <h1>Title</h1>
+        <img src="images/smithfield_logo.png" alt="Smithfield City logo">
+        <h1>Smithfield</h1>
+        <p>Utah's Health City</p>
     </header>
     <nav>
         <ul class="navigation">
           <li><a class="ham" href="#">&#x2630; Menu</a></li>
           <li><a class="hamclose" href="#">&#8593; Menu</a></li>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="city.html">Smithfield</a></li>
+          <li><a href="smithfieldcity.html">Smithfield</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join Us</a></li>
         </ul> 
     </nav>  
     <main>
-        <h3>Weather Summary</h3>
-        <p>Temperature: <span id="current-temp"></span>&#176; F</p>
-        <p>Currently: <span id="current-description"></span></p>
-        <p>Humidity: <span id="humidity"></span>%</p>
-        <div class="forcast"></div>
+        <div class="herodiv">
+
+        </div>
+        <div>
+            What is a chamber of commerce?
+            A chamber is ...
+        </div>
+        <div class="chamberads">
+            <div>Ad#1</div>
+            <div>Ad#2</div>
+            <div>Ad#3</div>
+        </div>
+        <div class="upcomingevents">
+
+        </div>
+        <div class="weather">
+            <div id="alertxt" class="">
+                <p>Sender Name: <span id="alertsender"></span></p>
+                <p>Event: <span id="alertevent"></span></p>
+                <p>Start: <span id="alertstart"></span></p>
+                <p>End: <span id="alertend"></span></p>
+                <p>Description: <span id="alert"></span></p>
+            </div>
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <p>Temperature: <span id="current-temp"></span>&#176; F</p>
+                <p>Currently: <span id="current-description"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+            </div>
+            <div class="forcast">
+            </div>
+        </div>
+        <div>
+            <a class="socialmedia" target="_blank" href="https://www.facebook.com/"><img class="icon" src="#" alt="Facebook Icon"></a>
+        </div>
     </main>
     <footer>
       <p>&copy; <span id='currentyear'></span> Smithfield City | Nathan Gregory</p>

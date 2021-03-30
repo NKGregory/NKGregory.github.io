@@ -1,6 +1,19 @@
 /*Common Site CSS*/
+#alertxt{
+    display: none;
+}
 
+#alertxt.showalert{
+    display: block;
+}
 
+h1{
+    font-family: 'Lato', sans-serif;
+}
+
+header p{
+    font-family: 'Open Sans', sans-serif;
+}
 /*Home Specific CSS*/
 
 
