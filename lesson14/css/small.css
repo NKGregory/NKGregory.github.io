@@ -1,12 +1,7 @@
 /*Common Site CSS*/
-#alertxt{
-    display: none;
+body{
+    background-color: #b3d6e6;
 }
-
-#alertxt.showalert{
-    display: block;
-}
-
 h1{
     font-family: 'Lato', sans-serif;
 }
@@ -15,7 +10,13 @@ header p{
     font-family: 'Open Sans', sans-serif;
 }
 /*Home Specific CSS*/
+#alertxt{
+    display: none;
+}
 
+#alertxt.showalert{
+    display: block;
+}
 
 /*City Specific CSS*/
 
@@ -24,3 +25,64 @@ header p{
 
 
 /*Directory Specific CSS*/
+
+
+/*Join Specific CSS*/
+form p.reqtext{
+    font-family: 'Open Sans', sans-serif;
+    float: right;
+    font-size: .75em;
+    margin-right: 1em;
+}
+form fieldset{
+    font-family: 'Open Sans', sans-serif;
+    margin: 2rem 0;
+    border: 5px solid #327ead;
+    border-radius: 10px;
+    padding: .5rem 2% 2em;
+    background-color: #54a0c7;
+}
+form legend{
+    font-family: 'Lato', sans-serif;
+    color: White;
+    background-color:  #1c6132;
+    border-radius: .5em;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    color: white;
+    font-size: .85em;
+}
+form label.top input,form label.top select, form textarea{
+    display: block;
+    font-size: 1em;
+    border: 1px solid #59605b;
+    border-radius: .25em;
+    padding: .85em;
+    color: #59605b;
+    width: 92%;
+    background-color: #e0ecf2;
+}
+form input.submitBtn {
+    border: none;
+    border-radius: .5em;
+    background-color: #1c6132;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    padding: .75em 1.5em;
+    margin: 0 0 2rem 2%;
+    width: 92%;
+}
+form label.top input:optional{
+    border-left: #59605b solid 1px;
+}
+form label.top input:required{
+    border-left: red solid 2px;
+}
+form label.top input:required:valid{
+    border-left: green solid 2px;
+}

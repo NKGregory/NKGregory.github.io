@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lesson#14 - Join - Nathan Gregory |WDD230</title>
+    <meta name='description' content='Lesson #14 - Chamber of Commerce Home page for Nathan Gregory in WDD 230 at BYU-I'>
+    <!--<link rel="shortcut icon" href="favicon.ico">-->
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+  </head>
+  <body>
+    <header>
+        <img src="images/smithfield_logo.png" alt="Smithfield City logo">
+        <h1>Smithfield</h1>
+        <p>Utah's Health City</p>
+    </header>
+    <nav>
+        <ul class="navigation">
+          <li><a class="ham" href="#">&#x2630; Menu</a></li>
+          <li><a class="hamclose" href="#">&#8593; Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="smithfieldcity.html">Smithfield</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li class="active"><a href="join.html">Join Us</a></li>
+        </ul> 
+    </nav>  
+    <main>
+        <form action="stormcenter-thanks.html" method="get">
+            <fieldset>
+              <legend>Your Information</legend>
+              <p class="reqtext">* Indicates Required Field</p>
+              <label class="top" for="frmNameA">*First Name
+                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}" 
+                required autofocus>
+              </label>
+              <label class="top" for="frmNameA">*Last Name
+                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}" 
+                required>
+              </label>
+              <label class="top" for="frmNameA">Title
+                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}">
+              </label>
+              <label class="top" for="frmEmailA">Email
+                <input type="email" name="email" id="frmEmailA" placeholder="example@domain.com" 
+                autocomplete="email" required>
+              </label>
+              <label class="top" for="frmPhoneNumA">Cell Phone
+                <input type="tel" name="phone" id="frmPhoneNumA" 
+                autocomplete="tel">
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Business Information</legend>
+              <label class="top" for="frmNameA">*Business Name
+                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}" 
+                required>
+              </label>
+              <label class="top" for="frmNameA">Business Address
+                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}">
+              </label>
+              <label class="top" for="frmNameA">Business Website
+                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}">
+              </label>
+              <label class="top" for="frmNameA">Business Description
+                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}">
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Membership Level</legend>
+              <label class="top">Storm Region:
+                <select name="stormregion">
+                  <option selected disabled>Choose Level...</option>
+                  <option value="Non-profit">Non-profit ($100)</option>
+                  <option value="Bronze">Bronze ($200)</option>
+                  <option value="Silver">Silver ($400)</option>
+                  <option value="Gold">Gold ($1000)</option>
+                </select>
+              </label>
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Join the Chamber">
+          </form>
+    </main>
+    <footer>
+      <p>&copy; <span id='currentyear'></span> Smithfield City | Nathan Gregory</p>
+      <p class="updateline">Last Updated: <span id="lastupdate"></span></p>
+    </footer>
+    <script src="/lesson1/js/date.js"></script>
+  </body>
+</html>
