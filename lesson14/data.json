@@ -1,3 +1,70 @@
 {
-    
+    "businesses": [
+        {
+          "name": "Alpine Cleaning and Restoration",
+          "phone": "435-563-3707",
+          "logo": "",            
+          "website": "www.alpinecleaning.com"
+        },
+        {
+            "name": "Berryhill Physical Therapy",
+            "phone": "435-563-0750",
+            "logo": "",            
+            "website": "berryhillphysicaltherapy.com"
+          },
+          {
+            "name": "Cox Data Systems, Inc.",
+            "phone": "435-757-4063",
+            "logo": "",            
+            "website": "coxcomputersystems.com"
+          },
+          {
+            "name": "Easy Breezy Ducts LLC",
+            "phone": "435-890-3355",
+            "logo": "",            
+            "website": "easybreezyducts.com/"
+          },
+          {
+            "name": "Nathan Blaylock Media",
+            "phone": "555-867-5309",
+            "logo": "",            
+            "website": "nathanblaylock.com"
+          },
+          {
+            "name": "Preston Watts Collision & Glass",
+            "phone": "435-563-3215",
+            "logo": "",            
+            "website": "www.prestonwatts.com"
+          },
+          {
+            "name": "State Farm Insurance",
+            "phone": "435-563-3236",
+            "logo": "",            
+            "website": "rigochaparro.com"
+          },
+          {
+            "name": "Sunrise Engineering, Inc.",
+            "phone": "800-560-6151",
+            "logo": "",            
+            "website": "sunrise-eng.com"
+          },
+          {
+            "name": "TNT Engraving",
+            "phone": "435-723-8023",
+            "logo": "",            
+            "website": "www.tntengraving.com/"
+          },
+          {
+            "name": "The Family Place Utah",
+            "phone": "435-752-8880",
+            "logo": "",            
+            "website": "thefamilyplaceutah.org/"
+          },
+          {
+            "name": "Wayne P. Elwood Agency, LLC",
+            "phone": "435-563-1600",
+            "logo": "",            
+            "website": "agents.farmers.com/ut/smithfield/wayne-elwood"
+          }
+    ]
 }
