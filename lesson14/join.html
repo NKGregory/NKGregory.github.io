@@ -31,28 +31,28 @@
         </ul> 
     </nav>  
     <main>
-        <form action="stormcenter-thanks.html" method="get">
+        <form action="stormcenter-thanks.html" method="get" autocomplete="on">
             <fieldset>
               <legend>Your Information</legend>
               <p class="reqtext">* Indicates Required Field</p>
-              <label class="top" for="frmNameA">*First Name
-                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}" 
+              <label class="top" for="joinfname">*First Name
+                <input type="text" name="joinfname" id="joinfname" autocomplete="fname" pattern="[A-Za-z-.\s]{3,}" 
                 required autofocus>
               </label>
-              <label class="top" for="frmNameA">*Last Name
-                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}" 
+              <label class="top" for="joinlName">*Last Name
+                <input type="text" name="joinlname" id="joinlname" autocomplete="lname" pattern="[A-Za-z-.\s]{3,}" 
                 required>
               </label>
-              <label class="top" for="frmNameA">Title
-                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}">
+              <label class="top" for="jointitle">Title
+                <input type="text" name="title" id="jointitle" pattern="[A-Za-z-.\s]{2,}">
               </label>
-              <label class="top" for="frmEmailA">Email
-                <input type="email" name="email" id="frmEmailA" placeholder="example@domain.com" 
+              <label class="top" for="joinEmail">*Email
+                <input type="email" name="email" id="joinEmail" placeholder="example@domain.com" 
                 autocomplete="email" required>
               </label>
-              <label class="top" for="frmPhoneNumA">Cell Phone
-                <input type="tel" name="phone" id="frmPhoneNumA" 
-                autocomplete="tel">
+              <label class="top" for="joinCell">Cell Phone
+                <input type="tel" name="phone" id="joinCell" pattern="[0-9]{10}"
+                autocomplete="tel" title="10 digit cell number">
               </label>
             </fieldset>
             <fieldset>
