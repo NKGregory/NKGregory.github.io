@@ -1,13 +1,92 @@
 /*Common Site CSS*/
-body{
-    background-color: #b3d6e6;
+
+header{
+    background-color:  #327ead;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    word-break: normal;
+}
+header img{
+    margin-left: .5em;
+    width: 125px;
+    height: 88px;
+}
+.headings{
+    margin-right: .25em;
 }
 h1{
     font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    margin-left: .25em;
 }
-
 header p{
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    margin-left: 1em;
+    font-style: italic;
+}
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #1c6132;
+}
+.navigation {
+	list-style: none;
+    padding: 0.75rem;
+    margin-top:0rem;
+}
+.navigation li:first-child {
+    display: block;
+    align-content: center;
+}
+.responsive li:first-child {
+    display: none;
+}
+.navigation li:nth-child(2) {
+    display: none;
+}
+.responsive li:nth-child(2) {
+    display: block;
+    text-align: center;
+    float: none;
+}
+.navigation li {
+	display: none;
+}
+.responsive li {
+    display: block;
+    padding: .5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+nav ul li.active a {
+    background-color: #54a0c7;
+    color: black;
+}
+.navigation a {
+    display: block;
+    padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+    background-color: #89b464;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border: black 1px solid;
+    border-radius: .25em;
+}
+.navigation a:hover {
+	background-color: #b3d6e6;
+}
+body{
+    background-color: #b3d6e6;
+}
+main{
+    max-width: 1100px;
+    margin: 0 auto;
 }
 /*Home Specific CSS*/
 #alertxt{

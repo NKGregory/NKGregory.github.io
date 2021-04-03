@@ -1,5 +1,18 @@
 @media only screen and (min-width: 500px) {
     /*Common Site CSS*/
+	header img{
+		width: 167px;
+		height: 117px;
+	}
+	h1 {
+        font-size: 1.3rem;
+		margin-top: 1.5em;
+	}
+	header p{
+		font-size: 1em;
+        margin-left: 1.25em;
+		margin-top: 1em;
+	}
 
     /*Home Specific CSS*/
 

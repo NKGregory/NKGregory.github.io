@@ -1,6 +1,36 @@
 @media only screen and (min-width: 800px) {
     /*Common Site CSS*/
-
+	header img {
+        width: 250px;
+        height: 175px;
+        margin-left: .25em;
+	}
+    h1{
+        font-size: 2em;
+		margin-top: 1.5em;
+    }
+    header p{
+        font-size: 1.25em;
+        margin-left: 2em;
+		margin-top: 1em;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		padding:.75rem;
+		flex:1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li:nth-child(2) {
+		display: none;
+	}
     /*Home Specific CSS*/
 
 
