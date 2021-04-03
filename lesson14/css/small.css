@@ -104,7 +104,10 @@ main{
 
 
 /*Directory Specific CSS*/
-
+.directory-logo{
+    width: 125px;
+    height: 88px;   
+}
 
 /*Join Specific CSS*/
 form p.reqtext{

@@ -17,6 +17,7 @@ fetch('../lesson14/data.json')
         h2.textContent = businesses[i].name;
         picture.setAttribute('src', businesses[i].logo);
         picture.setAttribute('alt', businesses[i].name + 'logo')
+        picture.setAttribute('class', 'directory-logo')
         phone.textContent = businesses[i].phone;
         website.textContent =businesses[i].website;
         website.setAttribute('href', businesses[i].website)
