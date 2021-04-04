@@ -24,8 +24,21 @@
 
 
     /*Directory Specific CSS*/
-
-    
+	.directorybtns{
+		display: block;
+		text-align: right;
+		margin-right: 1.5em;
+	}
+	.cards.list{    
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: .25em;
+		text-align: left;
+		margin-left: 0;
+	}
+	.cards {
+		grid-template-columns: 1fr 1fr;
+	 }
     /*Join Specific CSS*/
     form fieldset{
 		max-width: 500px;

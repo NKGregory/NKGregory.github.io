@@ -26,11 +26,19 @@ fetch('../lesson14/data.json')
 
 
         card.appendChild(h2);
+        card.appendChild(picture);
         card.appendChild(phone);
         card.appendChild(website);
-        card.appendChild(picture);
+
 
 
         document.querySelector('div.cards').appendChild(card);
     }
 });
+
+const grid = document.querySelector('.grid');
+const list = document.querySelector('.list');
+const cards = document.querySelector('.cards')
+
+grid.addEventListener('click', () => {cards.classList.remove('list')}, false);
+list.addEventListener('click', () => {cards.classList.add('list')}, false);

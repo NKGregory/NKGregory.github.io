@@ -104,11 +104,19 @@ main{
 
 
 /*Directory Specific CSS*/
+.directorybtns{
+    display: none;
+}
 .directory-logo{
     width: 125px;
     height: 88px;   
 }
-
+.cards {    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .25em;
+    text-align: center;
+}
 /*Join Specific CSS*/
 form p.reqtext{
     font-family: 'Open Sans', sans-serif;

@@ -41,7 +41,9 @@
 
 
     /*Directory Specific CSS*/
-
+    .cards {
+		grid-template-columns: 1fr 1fr 1fr;
+	 }
     
     /*Join Specific CSS*/
     
