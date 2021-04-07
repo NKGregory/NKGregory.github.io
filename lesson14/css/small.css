@@ -183,7 +183,6 @@ form legend{
 form label.top, form div{
     display: block;
     padding-top: 1rem;
-    color: white;
     font-size: .85em;
 }
 form label.top input,form label.top select, form textarea{
