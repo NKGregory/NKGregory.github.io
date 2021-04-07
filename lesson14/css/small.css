@@ -22,9 +22,8 @@ h1{
     font-size: 1.25rem;
     margin-left: .25em;
 }
-header p{
+header h2{
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
     margin-left: 1em;
     font-style: italic;
 }
