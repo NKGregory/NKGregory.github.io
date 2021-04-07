@@ -107,15 +107,41 @@ main{
 .directorybtns{
     display: none;
 }
-.directory-logo{
-    width: 125px;
-    height: 88px;   
-}
+
 .cards {    
     display: grid;
     grid-template-columns: 1fr;
-    gap: .25em;
+    gap: 1em;
     text-align: center;
+}
+.cards section{
+    border: 1px solid #327ead;
+    height: 350px;
+    position: relative;
+    text-align: center;
+}
+.cards section h2{
+    text-align: center;
+}
+.directory-logo{
+    max-width: 75%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cards section p{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cards section a{
+    position: absolute;
+    font-size: .9em;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /*Join Specific CSS*/
 form p.reqtext{
