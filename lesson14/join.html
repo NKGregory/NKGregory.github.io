@@ -33,7 +33,7 @@
         </ul> 
     </nav>  
     <main>
-        <form action="stormcenter-thanks.html" method="get" autocomplete="on">
+        <form action="join-thanks.html" method="get" autocomplete="on">
             <fieldset>
               <legend>Your Information</legend>
               <p class="reqtext">* Indicates Required Field</p>
@@ -45,38 +45,38 @@
                 <input type="text" name="lname" id="lname" pattern="[A-Za-z-.\s]{3,}" 
                 required>
               </label>
-              <label class="top" for="jointitle">Title
-                <input type="text" name="title" id="jointitle" pattern="[A-Za-z-.\s]{2,}">
+              <label class="top" for="title">Title
+                <input type="text" name="title" id="title" pattern="[A-Za-z-.\s]{2,}">
               </label>
               <label class="top" for="email">*Email
                 <input type="email" name="email" id="email" placeholder="example@domain.com" 
                 required>
               </label>
-              <label class="top" for="Cell">Cell Phone
-                <input type="tel" name="Cell" id="Cell" pattern="[0-9]{10}"
+              <label class="top" for="cell">Cell Phone
+                <input type="tel" name="cell" id="cell" pattern="[0-9]{10}"
                 autocomplete="tel" title="10 digit cell number">
               </label>
             </fieldset>
             <fieldset>
               <legend>Business Information</legend>
-              <label class="top" for="frmNameA">*Business Name
-                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}" 
+              <label class="top" for="bname">*Business Name
+                <input name="bname" id="bname" pattern="[A-Za-z-.\s]{3,}" 
                 required>
               </label>
-              <label class="top" for="frmNameA">Business Address
-                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}">
+              <label class="top" for="baddress">Business Address
+                <input name="baddress" id="baddress" placeholder="123 E. 456 N.">
               </label>
-              <label class="top" for="frmNameA">Business Website
-                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}">
+              <label class="top" for="burl">Business Website
+                <input type="url" name="burl" id="burl">
               </label>
-              <label class="top" for="frmNameA">Business Description
-                <input name="name" id="frmNameA" autocomplete="name" pattern="[A-Za-z-.\s]{3,}">
+              <label class="top" for="bdescr">Business Description
+                <textarea name="bdescr" id="bdescr"rows="3"> Give us a brief description of your business... </textarea>
               </label>
             </fieldset>
             <fieldset>
               <legend>Membership Level</legend>
               <label class="top">Membership:
-                <select name="stormregion">
+                <select name="membership">
                   <option selected disabled>Choose Level...</option>
                   <option value="Non-profit">Non-profit ($100)</option>
                   <option value="Bronze">Bronze ($200)</option>
