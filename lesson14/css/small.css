@@ -135,6 +135,7 @@ footer{
     text-align: center;
 }
 .cards section h2{
+    font-family: 'Lato', sans-serif;
     text-align: center;
 }
 .directory-logo{
@@ -145,12 +146,14 @@ footer{
     transform: translate(-50%, -50%);
 }
 .cards section p{
+    font-family: 'Open Sans', sans-serif;
     position: absolute;
     bottom: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .cards section a{
+    font-family: 'Open Sans', sans-serif;
     position: absolute;
     font-size: .9em;
     bottom: 15%;
