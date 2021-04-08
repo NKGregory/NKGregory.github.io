@@ -27,6 +27,7 @@
 	.directorybtns{
 		display: flex;
 		justify-content: flex-end;
+		text-align: center;
 		margin-bottom: 1em;
 	}
 	.directorybtns a{
@@ -36,6 +37,9 @@
 		background-color: #1c6132;
 		border: 1px solid black;
 		border-radius: 4px;	
+	}
+	.directorybtns h2{
+		flex: auto;
 	}
 	.directorybtns a:hover{
 		background-color: #327ead;

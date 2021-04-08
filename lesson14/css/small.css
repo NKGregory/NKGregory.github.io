@@ -27,6 +27,12 @@ header h2{
     margin-left: 1em;
     font-style: italic;
 }
+p {
+    font-family: 'Open Sans', sans-serif;    
+}
+h2, h3, h4{
+    font-family: 'Lato', sans-serif;
+}
 nav {
 	margin: 0 auto;
 	max-width: 100%;
@@ -83,6 +89,9 @@ nav ul li.active a {
 body{
     background-color: #b3d6e6;
 }
+.pagehead{
+    text-align: center;
+}
 main{
     max-width: 1100px;
     margin: 0 auto;
@@ -119,9 +128,10 @@ footer{
     gap: 2em;
 }
 .contact input.submitBtn {
-    border: none;
+    border: 1px solid #1c6132;
     border-radius: .5em;
     background-color: #89b464;
+    color: black;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
     padding: .75em 1.5em;
