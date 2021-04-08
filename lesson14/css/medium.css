@@ -22,7 +22,6 @@
 
     /*Contact Specific CSS*/
 
-
     /*Directory Specific CSS*/
 	.directorybtns{
 		display: flex;
@@ -64,8 +63,8 @@
 	form label.top input,form label.top select, form textarea{
 		max-width: 20rem;
 	}
-	.join input.submitBtn {
-		max-width: 30%;
-		margin: 2rem 35%;
+	.joinsubmitBtn {
+		max-width: 40%;
+		margin-left: 30%;
 	}
 }

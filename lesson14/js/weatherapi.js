@@ -38,8 +38,8 @@ fetch(apiURL)
 
         document.querySelector('div.forcast').appendChild(card);
    
-        if(jsObject.hasOwnProperty("alerts")){
-        //if(jsObject.hasOwnProperty("timezone")){ 
+        //if(jsObject.hasOwnProperty("alerts")){
+        if(jsObject.hasOwnProperty("timezone")){ 
             const alertshow = document.getElementById('alertxt');
             {alertshow.classList.add('showalert')}
             //document.getElementById('alertsender').textContent = jsObject.alerts.sender_name;
@@ -59,4 +59,6 @@ fetch(apiURL)
 
     }
     
-  });
+  }
+  
+  );
