@@ -1,5 +1,11 @@
 {
     "businesses": [
+      {
+        "name": "Your Business Name Here",
+        "phone": "Your Phone Number",
+        "logo": "data/images/you.png",            
+        "website": "Your Website Here"
+      },
         {
           "name": "Alpine Cleaning and Restoration",
           "phone": "(435)563-3707",

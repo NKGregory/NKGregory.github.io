@@ -53,14 +53,14 @@
 		grid-template-columns: 1fr 1fr;
 	 }
     /*Join Specific CSS*/
-    form fieldset{
+    .join fieldset{
 		max-width: 500px;
 		margin: 2rem auto;
 	}
 	form label.top input,form label.top select, form textarea{
 		max-width: 20rem;
 	}
-	form input.submitBtn {
+	.join input.submitBtn {
 		max-width: 30%;
 		margin: 2rem 35%;
 	}

@@ -33,56 +33,45 @@
         </ul> 
     </nav>  
     <main>
+      <h3>Contact Us!</h3>
+      <div class="contactmain">
+      <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4719.056580952683!2d-111.83064396100501!3d41.83218596085321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf2fe47a80753a89!2sSmithfield%20City%20Office!5e0!3m2!1sen!2sus!4v1617331165434!5m2!1sen!2sus" 
+      allowfullscreen="" loading="lazy">
+      </iframe>
+      <form  class = "contact" action="contact-thanks.html" method="get" autocomplete="on">
+          <p class="reqtext">* Indicates Required Field</p>
+          <label class="top" for="fullname">*Full Name
+            <input type="text" name="name" id="fullname" autocomplete="name" pattern="[A-Za-z-.\s]{3,}" required>
+          </label>
+          <label class="top" for="cell">Cell Phone
+            <input type="tel" name="cell" id="cell" pattern="[0-9]{10}"
+            title="10 digit cell number">
+          </label>
+          <label class="top" for="email">*Email
+            <input type="email" name="email" id="email" placeholder="example@domain.com" 
+            autocomplete="email" required>
+          </label>
+          <label class="top">Questions/Comments 
+            <textarea name="comments" placeholder="Type here..." rows="3"></textarea>
+          </label>
+          <input class="submitBtn" type="submit" value="Contact Us">
+      </form>
         <div class="contactinfo">
-            <h3>We'd love to hear from you</h3>
-            <h4>Smithfield Chamber of Commerce</h4>
+          <hr>
+            <h3>Smithfield Chamber of Commerce</h3>
             <p>96 Main St</p>
             <p>Smithfield, UT 84335</p>
             <p>&#9742;(555) 555-5555</p>
             <p>&#9993;<a href="#">smithfieldchamber@gmail.com</a></p>
-            <div class="social">
-              <a class="socialmedia" target="_blank" href="https://www.facebook.com"><img class="icon" src="images/facebook.png" alt="Facebook Icon"></a>
-              <a class="socialmedia" target="_blank" href="https://www.twitter.com"><img class="icon" src="images/twitter.png" alt="Twitter Icon"></a>
-              <a class="socialmedia" target="_blank" href="https://www.youtube.com"><img class="icon" src="images/youtube.png" alt="YouTube Icon"></a>
+            <hr>
+            <div class="board">
+              <h3>Board of Directors</h4>
+              <p>President: Wayne Moore, Alpine Cleaning and Restoration</p>
+              <p>Treasurer: Terri Stapley, Stapley Accounting Services</p>
+              <p>Director: Nicole Zollinger</p>
             </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4719.056580952683!2d-111.83064396100501!3d41.83218596085321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf2fe47a80753a89!2sSmithfield%20City%20Office!5e0!3m2!1sen!2sus!4v1617331165434!5m2!1sen!2sus" 
-        width="600" height="450" style="border:5px solid #327ead; border-radius: 1em;" allowfullscreen="" loading="lazy">
-        </iframe>
-        <form action="stormcenter-thanks.html" method="get" autocomplete="on">
-            <fieldset>
-              <legend>Your Information</legend>
-              <p class="reqtext">* Indicates Required Field</p>
-              <label class="top" for="fname">*First Name
-                <input type="text" name="fname" id="fname" pattern="[A-Za-z-.\s]{3,}" 
-                required>
-              </label>
-              <label class="top" for="lname">*Last Name
-                <input type="text" name="lname" id="lname" pattern="[A-Za-z-.\s]{3,}" 
-                required>
-              </label>
-              <label class="top" for="cell">Cell Phone
-                <input type="tel" name="cell" id="cell" pattern="[0-9]{10}"
-                title="10 digit cell number">
-              </label>
-              <label class="top" for="joinEmail">*Email
-                <input type="email" name="email" id="joinEmail" placeholder="example@domain.com" 
-                autocomplete="email" required>
-              </label>
-              <label class="top">Questions or Comments? 
-                <textarea name="comments" placeholder="Enter Comments here..."></textarea>
-              </label>
-              <input class="submitBtn" type="submit" value="Contact Us">
-            </fieldset>
-          </form>
-          <div class="Board">
-            <h3>Board of Directors</h3>
-            <p>Bill Emmett - President (Nov 2022: 2nd term)</p>
-            <p>Holly Jones - Secretary (Jan 2021: 2nd term)</p>
-            <p>April Godderidge - Member (Jan 2022: 1st term)</p>
-            <p>Michelle Thompson - Member (Nov 2022: 2nd term)</p>
-            <p>Wade Campbell - City Council Representative</p>
-          </div>
+      </div>
     </main>
     <footer>
       <p>&copy; <span id='currentyear'></span> Smithfield City | Nathan Gregory</p>
