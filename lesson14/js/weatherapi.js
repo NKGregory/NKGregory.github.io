@@ -14,7 +14,7 @@ fetch(apiURL)
     console.log(ForecastDays)
     for (let i = 0; i < ForecastDays.length; i++ ) {
         let card = document.createElement('section');
-        let weekday = document.createElement('p')
+        let weekday = document.createElement('h4')
         let picture = document.createElement('img')
         let temp = document.createElement('p')
 
