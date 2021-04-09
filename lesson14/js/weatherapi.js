@@ -62,3 +62,8 @@ fetch(apiURL)
   }
   
   );
+
+const alertclose = document.querySelector('.closealert');
+const alertshow = document.getElementById('alertxt');
+
+alertclose.addEventListener('click', () => {alertshow.classList.remove('showalert')}, false);

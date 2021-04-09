@@ -23,6 +23,7 @@ h1{
 }
 header h2{
     font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
     margin-left: 1em;
     font-style: italic;
 }
@@ -131,6 +132,7 @@ footer{
     background-color: #89b46499;
     color: black;
     text-align: center;
+    font-size: .7em;
     border: 3px solid #1c6132;
     padding: .5rem;
     height: 8em;
@@ -160,7 +162,7 @@ footer{
     text-align: center;
 }
 .whatchamber{
-    width: 80%;
+    width: 85%;
     justify-self: center;
     text-align: center;
 	grid-row: 2;
@@ -177,7 +179,7 @@ footer{
 }
 #alertxt.showalert{
     display: block;
-    width: 90%;
+    width: 85%;
     padding: 1em;
     margin: 0 auto;
     border-radius: .5em;
@@ -190,7 +192,8 @@ footer{
     margin-right: 1em;
     padding: .5em;
     border-radius: .25em;
-    background-color: red;
+    background-color: white;
+    color: black;
 }
 .summary{
     grid-row: 2;
@@ -210,6 +213,7 @@ footer{
     flex-direction: column;
     width: 100%;
     text-align: center;
+    align-items: center;
 }
 .forcastitle{
     grid-row: 1;
@@ -219,12 +223,12 @@ footer{
     display: inline-block;
     border: 1px solid black;
     align-content: center;
-    width: 33%;
+    width: 85%;
     margin: 1em;
 }
 .forcast section h4{
     background-color: #327ead;
-    color: white;
+    color: black;
     padding: 1em;
     margin-top: -.1em;
 }
