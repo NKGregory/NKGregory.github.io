@@ -71,7 +71,9 @@
         grid-column: 4;
     }
     /*City Specific CSS*/
-
+	.heroverlay{
+		height: 9em;
+	}
 
     /*Contact Specific CSS*/
 	.contactmain {

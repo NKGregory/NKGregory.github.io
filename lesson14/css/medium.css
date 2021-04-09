@@ -90,8 +90,13 @@
 		grid-column: 3;
 	}
     /*City Specific CSS*/
-
-
+	.heroverlay{
+		font-size: 1rem;
+		height: 12em;
+	}
+	.smithfieldevents{
+		font-size: 1rem;
+	}
     /*Contact Specific CSS*/
 
     /*Directory Specific CSS*/

@@ -272,10 +272,10 @@ footer{
     background-color: #327ead99;
     color: white;
     text-align: center;
-    font-size: 1rem;
+    font-size: .65rem;
     border: 1px solid black;
     padding: .5rem;
-    height: 10em;
+    height: 12em;
     width: 75%; 
 }
 .smithfieldevents{
@@ -286,7 +286,28 @@ footer{
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+    font-size: .75rem;
     margin-top: 2em;
+}
+.article{
+    max-width: 650px;
+    width:85%;
+    margin: 0 auto;
+    margin-top: 2em;
+    background-color: #327ead;
+}
+.articlecontain{
+    width: 50%;
+    float: right;
+    height: auto;
+    margin-top: -3em;
+    padding: .5em;
+}
+.article img{
+    width: 100%;
+}
+.article p, h3{
+    padding: .75em;
 }
 /*Contact Specific CSS*/
 .contactmain {
