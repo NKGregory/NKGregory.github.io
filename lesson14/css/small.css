@@ -309,6 +309,9 @@ footer{
 .article p, h3{
     padding: .75em;
 }
+.link {
+    color: white;
+}
 /*Contact Specific CSS*/
 .contactmain {
     margin-top: 2em;

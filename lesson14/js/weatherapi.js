@@ -38,20 +38,19 @@ fetch(apiURL)
 
         document.querySelector('div.forcast').appendChild(card);
    
-        //if(jsObject.hasOwnProperty("alerts")){
-        if(jsObject.hasOwnProperty("timezone")){ 
+        if(jsObject.hasOwnProperty("alerts")){
             const alertshow = document.getElementById('alertxt');
             {alertshow.classList.add('showalert')}
-            //document.getElementById('alertsender').textContent = jsObject.alerts.sender_name;
-            document.getElementById('alertsender').textContent = "NWS Tulsa (Eastern Oklahoma)";
-            //document.getElementById('alertevent').textContent = jsObject.alerts.event;
-            document.getElementById('alertevent').textContent = "Heat Advisory";
-            //document.getElementById('alertstart').textContent = new Date((jsObject.alerts.start)*1000);
-            document.getElementById('alertstart').textContent = new Date((1617109968)*1000);
-            //document.getElementById('alertend').textContent = new Date((jsObject.alerts.end)*1000);
-            document.getElementById('alertend').textContent = new Date((1617627757)*1000);
-            //document.getElementById('alert').textContent = jsObject.alerts.description;
-            document.getElementById('alert').textContent = "...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible.";
+            document.getElementById('alertsender').textContent = jsObject.alerts.sender_name;
+            //document.getElementById('alertsender').textContent = "United Nations";
+            document.getElementById('alertevent').textContent = jsObject.alerts.event;
+            //document.getElementById('alertevent').textContent = "Alien Invasion";
+            document.getElementById('alertstart').textContent = new Date((jsObject.alerts.start)*1000);
+            //document.getElementById('alertstart').textContent = new Date((1617109968)*1000);
+            document.getElementById('alertend').textContent = new Date((jsObject.alerts.end)*1000);
+            //document.getElementById('alertend').textContent = new Date((1617627757)*1000);
+            document.getElementById('alert').textContent = jsObject.alerts.description;
+            //document.getElementById('alert').textContent = "Run and Hide";
         } else {
         const alerthide = document.getElementById('alertxt');
         {alerthide.classList.remove('showalert')}
