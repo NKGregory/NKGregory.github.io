@@ -1,0 +1,460 @@
+/*Common Site CSS*/
+header{
+    background-color:  #327ead;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    word-break: normal;
+}
+header img{
+    margin-left: .5em;
+    width: 125px;
+    height: 88px;
+}
+.headings{
+    margin-right: .25em;
+}
+h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    margin-left: .25em;
+}
+header h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin-left: 1em;
+    font-style: italic;
+}
+p {
+    font-family: 'Open Sans', sans-serif;    
+}
+h2, h3, h4{
+    font-family: 'Lato', sans-serif;
+}
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #1c6132;
+}
+.navigation {
+	list-style: none;
+    padding: 0.75rem;
+    margin-top:0rem;
+}
+.navigation li:first-child {
+    display: block;
+    align-content: center;
+}
+.responsive li:first-child {
+    display: none;
+}
+.navigation li:nth-child(2) {
+    display: none;
+}
+.responsive li:nth-child(2) {
+    display: block;
+    text-align: center;
+    float: none;
+}
+.navigation li {
+	display: none;
+}
+.responsive li {
+    display: block;
+    padding: .5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+nav ul li.active a {
+    background-color: #54a0c7;
+    color: black;
+}
+.navigation a {
+    display: block;
+    padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+    background-color: #89b464;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border:  1px solid black;
+    border-radius: .25em;
+}
+.navigation a:hover {
+	background-color: #b3d6e6;
+}
+body{
+    background-color: #b3d6e6;
+}
+.pagehead{
+    text-align: center;
+}
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+footer{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #89b464;
+    border-top: 5px solid #1c6132;
+    border-bottom: 5px solid #1c6132;
+    margin: 0 auto;
+    margin-top: 2em;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+/*Home Specific CSS*/
+.indexgrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+.indexherocontain img{
+    width: 100%;
+    box-shadow: 10px 10px 20px;
+}
+.indexherocontain {
+    grid-row: 1;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+.call2action a{
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    text-decoration: none;
+    background-color: #89b46499;
+    color: black;
+    text-align: center;
+    font-size: .7em;
+    border: 3px solid #1c6132;
+    padding: .5rem;
+    height: 8em;
+    width: 75%; 
+}
+.chamberad1{
+    grid-column: 1;
+	grid-row: 3;
+    width: 100%;
+    margin: 0;
+    align-self: center;
+    text-align: center;
+}
+.chamberad2{
+    grid-column: 1;
+	grid-row: 4;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+.chamberad3{
+    grid-column: 1;
+	grid-row: 5;
+    width: 100%;
+    margin: 0;
+    align-self: center;
+    text-align: center;
+}
+.whatchamber{
+    width: 85%;
+    justify-self: center;
+    text-align: center;
+	grid-row: 2;
+}
+.upcomingevents{
+	grid-row: 6;
+    text-align: center;
+}
+.weather{
+    grid-row: 7;
+}
+#alertxt{
+    display: none;
+}
+#alertxt.showalert{
+    display: block;
+    width: 85%;
+    padding: 1em;
+    margin: 0 auto;
+    border-radius: .5em;
+    background-color: tomato;
+}
+.closealert{
+    display: block;
+    text-decoration: none;
+    float: right;
+    margin-right: 1em;
+    padding: .5em;
+    border-radius: .25em;
+    background-color: white;
+    color: black;
+}
+.summary{
+    grid-row: 2;
+    text-align: center;
+    place-content: center;
+    margin: 1em;
+    background-color: #54a0c7;
+    border: solid 3px black;
+}
+.summarytitle{
+    grid-row: 1;
+    text-align: center;
+}
+.forcast{
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.forcastitle{
+    grid-row: 1;
+    text-align: center;
+}
+.forcast section{
+    display: inline-block;
+    border: 1px solid black;
+    align-content: center;
+    width: 85%;
+    margin: 1em;
+}
+.forcast section h4{
+    background-color: #327ead;
+    color: black;
+    padding: 1em;
+    margin-top: -.1em;
+}
+.forcast section img{
+    margin-top: -1em;
+}
+.forcast section p{
+    margin-top: .25em;
+}
+.indexmap{
+    display: none;
+}
+.indexcontactinfo{
+    grid-row: 8;
+    text-align: center;
+}
+.social{
+    display: flex;
+}
+.socialmedia {
+    display: inline;
+    text-align: center;
+    margin: auto;
+}
+/*City Specific CSS*/
+.cityherocontain img{
+    width: 100%;
+    box-shadow: 10px 10px 20px;
+}
+.cityherocontain {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1100px;
+    width: 85%;
+    justify-content: center;
+}
+.heroverlay{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background-color: #327ead99;
+    color: white;
+    text-align: center;
+    font-size: .65rem;
+    border: 1px solid black;
+    padding: .5rem;
+    height: 12em;
+    width: 75%; 
+}
+.smithfieldevents{
+    background-color: #89b464;;
+    border: 3px solid #1c6132;
+    box-shadow: 10px 10px 20px;
+    width: 75%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: .75rem;
+    margin-top: 2em;
+}
+.article{
+    max-width: 650px;
+    width:85%;
+    margin: 0 auto;
+    margin-top: 2em;
+    background-color: #327ead;
+}
+.articlecontain{
+    width: 50%;
+    float: right;
+    height: auto;
+    margin-top: -3em;
+    padding: .5em;
+}
+.article img{
+    width: 100%;
+}
+.article p, h3{
+    padding: .75em;
+}
+.link {
+    color: white;
+}
+/*Contact Specific CSS*/
+.contactmain {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr .5fr;
+    gap: 2em;
+}
+.contact input.submitBtn {
+    border: 1px solid #1c6132;
+    border-radius: .5em;
+    background-color: #89b464;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    padding: .75em 1.5em;
+    margin: 1em 0 auto;
+    width: 95%;
+}
+.contact{
+    grid-row: 1;
+    font-family: 'Open Sans', sans-serif;
+    width: 400px;
+    margin: 0 auto;
+}
+.map{
+    border:1px solid black;
+    border-radius: .5em;
+    width: 100%;
+    height: 400px;
+    grid-row: 3;
+}
+.contactinfo{
+    text-align: center;
+    grid-row: 2;
+}
+/*Directory Specific CSS*/
+.directorybtns{
+    display: none;
+}
+.cards {    
+    display: grid;
+    background-color: #54a0c7;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    text-align: center;
+}
+.cards section{
+    border: 5px solid #327ead;
+    border-radius: 10px;
+    background-color: #b3d6e6;
+    height: 350px;
+    position: relative;
+    text-align: center;
+}
+.cards section h2{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+.directory-logo{
+    max-width: 75%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cards section p{
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cards section a{
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    font-size: .9em;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Join Specific CSS*/
+ p.reqtext{
+    font-family: 'Open Sans', sans-serif;
+    float: right;
+    font-size: .75em;
+    margin-right: 1em;
+}
+.join fieldset{
+    font-family: 'Open Sans', sans-serif;
+    margin: 2rem 0;
+    border: 5px solid #327ead;
+    border-radius: 10px;
+    padding: .5rem 2% 2em;
+    background-color: #54a0c7;
+}
+form legend{
+    font-family: 'Lato', sans-serif;
+    color: White;
+    background-color:  #1c6132;
+    border-radius: .5em;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top{
+    display: block;
+    padding-top: 1rem;
+    font-size: .85em;
+}
+form label.top input,form label.top select, form textarea{
+    display: block;
+    font-size: 1em;
+    border: 1px solid #59605b;
+    border-radius: .25em;
+    padding: .85em;
+    color: #59605b;
+    width: 92%;
+    background-color: #e0ecf2;
+}
+.joinsubmitBtn {
+    border: none;
+    border-radius: .5em;
+    background-color: #1c6132;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    padding: .75em 1.5em;
+    margin: 0 0 2rem 2%;
+    width: 92%;
+}
+form label.top input:optional{
+    border-left: #59605b solid 1px;
+}
+form label.top input:required{
+    border-left: red solid 2px;
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+form label.top input:required:valid{
+    border-left: green solid 2px;
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}

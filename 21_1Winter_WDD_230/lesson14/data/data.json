@@ -1,0 +1,76 @@
+{
+    "businesses": [
+      {
+        "name": "Your Business Name Here",
+        "phone": "Your Phone Number",
+        "logo": "data/images/you.png",            
+        "website": "Your Website Here"
+      },
+        {
+          "name": "Alpine Cleaning and Restoration",
+          "phone": "(435)563-3707",
+          "logo": "data/images/alpine-cleaning.png",            
+          "website": "https://www.alpinecleaning.com"
+        },
+        {
+            "name": "Berryhill Physical Therapy",
+            "phone": "(435)563-0750",
+            "logo": "data/images/berry-hill-therapy.png",            
+            "website": "https://berryhillphysicaltherapy.com"
+          },
+          {
+            "name": "Cox Data Systems, Inc.",
+            "phone": "(435)757-4063",
+            "logo": "data/images/cox-data-systems-inc.jpg",            
+            "website": "https://coxcomputersystems.com"
+          },
+          {
+            "name": "Easy Breezy Ducts LLC",
+            "phone": "(435)890-3355",
+            "logo": "data/images/easy-breezy-ducts.png",            
+            "website": "https://easybreezyducts.com/"
+          },
+          {
+            "name": "Nathan Blaylock Media",
+            "phone": "(555)867-5309",
+            "logo": "data/images/nathan-blaylock-media.png",            
+            "website": "nathanblaylock.com"
+          },
+          {
+            "name": "Preston Watts Collision & Glass",
+            "phone": "(435)563-3215",
+            "logo": "data/images/preston-watts.png",            
+            "website": "https://www.prestonwatts.com"
+          },
+          {
+            "name": "State Farm Insurance",
+            "phone": "(435)563-3236",
+            "logo": "data/images/state-farm.png",            
+            "website": "https://rigochaparro.com"
+          },
+          {
+            "name": "Sunrise Engineering, Inc.",
+            "phone": "(800)560-6151",
+            "logo": "data/images/sunrise-engineering.png",            
+            "website": "https://sunrise-eng.com"
+          },
+          {
+            "name": "TNT Engraving",
+            "phone": "(435)723-8023",
+            "logo": "data/images/tnt-engraving.png",            
+            "website": "https://www.tntengraving.com/"
+          },
+          {
+            "name": "The Family Place Utah",
+            "phone": "(435)752-8880",
+            "logo": "data/images/family-place.png",            
+            "website": "https://thefamilyplaceutah.org/"
+          },
+          {
+            "name": "Wayne P. Elwood Agency, LLC",
+            "phone": "(435)563-1600",
+            "logo": "data/images/elwood-farmers.png",            
+            "website": "https://agents.farmers.com/ut/smithfield/wayne-elwood"
+          }
+    ]
+}

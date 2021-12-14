@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lesson#7 - Gallery - Nathan Gregory |WDD230</title>
+    <meta name='description' content='Lesson #7 - Gallery page for Nathan Gregory in WDD 230 at BYU-I'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+  </head>
+  <body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <section class="headings">
+          <h1>I'm Such a Snow it All</h1>
+          <div class="subhead">I predict a 100% Chance of Weather</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#x2630; Menu</a></li>
+            <li><a class="hamclose" href="#">&#8593; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-8.html">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul> 
+    </nav>  
+    <main>
+      <h2>Weather Gallery</h2>
+      <div class="gallery">
+      <figure>
+        <img src="https://via.placeholder.com/320x215.png" 
+        data-src="images/winter.jpg" 
+        alt="Snow covered backroad"/>
+        <figcaption>Snow covered backroad</figcaption> 
+      </figure>
+      <figure>
+       <img src="https://via.placeholder.com/320x215.png" 
+       data-src="images/spring.jpg" 
+       alt="New tree buds"/>
+       <figcaption>New tree buds</figcaption>
+     </figure>
+     <figure>
+      <img src="https://via.placeholder.com/320x215.png" 
+      data-src="images/lightning.jpg" 
+      alt="Lightning strike"/>
+      <figcaption>Lightning strike</figcaption>
+    </figure>
+     <figure>
+       <img src="https://via.placeholder.com/320x215.png" 
+       data-src="images/summer.jpg" 
+       alt="field of summer flowers"/>
+       <figcaption>Field of summer flowers</figcaption>
+     </figure>
+     <figure>
+       <img src="https://via.placeholder.com/320x215.png" 
+       data-src="images/leaves.jpg" 
+       alt="Oak leaves"/>
+       <figcaption>Oak leaves</figcaption>
+     </figure>
+     <figure>
+       <img src="https://via.placeholder.com/320x215.png" 
+       data-src="images/rainbow.jpg" 
+       alt="Rainbow"/>
+       <figcaption>Rainbow over a field</figcaption>
+     </figure>
+     <figure>
+      <img src="https://via.placeholder.com/320x215.png" 
+      data-src="images/foggy.jpg" 
+      alt="Fog on mountain"/>
+      <figcaption>Fog rolls over the mountain</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/320x215.png" 
+      data-src="images/clouds.jpg" 
+      alt="Clouds"/>
+      <figcaption>Beautiful clouds against the blue sky</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/320x215.png" 
+      data-src="images/stormy.jpg" 
+      alt="Storm clouds"/>
+      <figcaption>Storm clouds gathering over the valley</figcaption>
+    </figure>
+    </div>
+     <script src="js/imagehandling.js"></script>
+      <script src="js/nav.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="js/webfontload.js"></script> 
+    </main>
+    <footer>
+      <p>&copy; <span id='currentyear'></span> I'm Such a Snow it All | Nathan Gregory
+        <br>
+        <a class = "portallink" href='/index.html'>Portal</a> | <span id='currentdate'></span></p>
+    </footer>
+    <script src='js/date.js'></script>
+  </body>
+</html>

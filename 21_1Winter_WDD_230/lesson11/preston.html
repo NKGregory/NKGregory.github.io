@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lesson#11 - Preston, ID - Nathan Gregory |WDD230</title>
+    <meta name='description' content='Lesson #11 - Preston Weather page for Nathan Gregory in WDD 230 at BYU-I'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+    <script src="js/banner.js"></script>
+  </head>
+  <body onload="insertbanner()">
+
+    <div id="bannertext" class=""><h3>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h3></div>
+    <header>
+        <img src="images/logo.png" alt="Snow it All Logo">
+        <section class="headings">
+          <h1>I'm Such a Snow it All</h1>
+          <div class="subhead">I predict a 100% Chance of Weather</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+          <li><a class="ham" href="#">&#x2630; Menu</a></li>
+          <li><a class="hamclose" href="#">&#8593; Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="preston.html">Preston</a></li>
+          <li><a href="sodasprings.html">Soda Springs</a></li>
+          <li><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul> 
+    </nav>  
+    <main>
+      <h2>Preston, Idaho</h2>
+
+      <div class="herocontain">
+        <img src="images/preston/preston-hero.jpg" alt="Mountain View of Rural Preston">
+        <div class="weathersummary">
+          <h3>Weather Summary</h3>
+          <p>Currently: <span id="currently"></span></p>
+          <p>Temperature: <span id="current-temp"></span>&#176; F</p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Precipitation: 0 inches</p>
+          <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+          <p>Wind Chill: <span id="windchill"></span></p>
+        </div>
+      </div>
+      <div class="events">
+        <h3>Upcoming Events</h3>
+      </div>
+      <div class="forcast">
+        <h3>5 Day Forecast</h3>
+        <p class="datasource">Weather data provided by OpenWeatherMap</p>
+        <hr>
+        <div class="forcasttable">
+        </div>
+      </div>
+      <div class="article">
+        <div class="articlecontain">
+          <img src="images/preston/preston-article.jpg" alt="Founder's Day Carnival Ride and Food Stall">
+        </div>
+        <h3>FFA hosts annual breakfast</h3>
+        <p class="byline">by Necia Seamons</p>
+        <p>The breakfast has become an annual tradition for Preston FFA during FFA Week.
+          “It provides an opportunity for the FFA members to show their appreciation to all those that support 
+          and promote the chapter throughout the year. Students look forward to the event each year and are 
+          excited to put it on. We are fortunate to belong to a great school district and community,” said chapter 
+          advisor Larin Crossley. Awards received by the chapter in the last year include fourth place in the 
+          Agricultural Technology & Mechanical Systems CDE, second place in State Agricultural ...
+          <a class = "link" href="https://www.hjnews.com/preston/ffa-hosts-annual-breakfast/article_91758e0b-c18f-54ab-9d77-8850eadf0604.html">continue to full article</a>
+        </p>
+      </div>
+      <div class="contact">
+        <img class="map" src="images/preston/preston-map.JPG" alt="Map">
+        <div class="contactinfo">
+          <h3>Contact Us!</h3>
+          <hr>
+          <h4>I'm Such a Snow it All</h4>
+          <p>123 East 456 North</p>
+          <p>Preston, ID 83263</p>
+          <hr>
+          <p>&#9742;(555) 555-5555</p>
+          <p>&#9993;<a href="#">snowitall@gmail.com</a></p>
+          <div class="social">
+            <a class="socialmedia" target="_blank" href="https://www.facebook.com"><img class="icon" src="images/facebook.png" alt="Facebook Icon"></a>
+            <a class="socialmedia" target="_blank" href="https://www.twitter.com"><img class="icon" src="images/twitter.png" alt="Twitter Icon"></a>
+            <a class="socialmedia" target="_blank" href="https://www.youtube.com"><img class="icon" src="images/youtube.png" alt="YouTube Icon"></a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <p>&copy; <span id='currentyear'></span> I'm Such a Snow it All | Nathan Gregory
+        <br>
+        <a class = "portallink" href='/index.html'>Portal</a> | <a class = "portallink" href='https://openweathermap.org/faq'>openweathermap.org</a> | <span id='currentdate'></span></p>
+    </footer>
+    <script src='js/date.js'></script>
+    <script src="js/prestonweatherapi.js"></script>
+    <script src="js/prestonevents.js"></script>
+    <!--<script src="js/windchill.js"></script>-->
+    <script src="js/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script> 
+  </body>
+</html>

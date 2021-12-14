@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lesson#11 - Gallery - Nathan Gregory |WDD230</title>
+    <meta name='description' content='Lesson #11 - Gallery page for Nathan Gregory in WDD 230 at BYU-I'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+  </head>
+  <body>
+    <header>
+        <img src="images/logo.png" alt="Snow it All Logo">
+        <section class="headings">
+          <h1>I'm Such a Snow it All</h1>
+          <div class="subhead">I predict a 100% Chance of Weather</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+          <li><a class="ham" href="#">&#x2630; Menu</a></li>
+          <li><a class="hamclose" href="#">&#8593; Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="sodasprings.html">Soda Springs</a></li>
+          <li><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul> 
+    </nav>  
+    <main>
+      <h2>Weather Gallery</h2>
+      <div class="gallery">
+      <figure>
+        <img src="https://via.placeholder.com/320x215.png" 
+        data-src="images/gallery/winter.jpg" 
+        alt="Snow covered backroad" loading="lazy" height="225" width="325"/>
+        <figcaption>Snow doesn't scare us</figcaption> 
+      </figure>
+      <figure>
+       <img src="https://via.placeholder.com/320x215.png" 
+       data-src="images/gallery/spring.jpg" 
+       alt="New tree buds" loading="lazy" height="225" width="325"/>
+       <figcaption>Spring time buds</figcaption>
+     </figure>
+     <figure>
+      <img src="https://via.placeholder.com/320x215.png" 
+      data-src="images/gallery/lightning.jpg" 
+      alt="Lightning strike on a dark night" loading="lazy" height="225" width="325"/>
+      <figcaption>Lightning strikes the mountain ridge</figcaption>
+    </figure>
+     <figure>
+       <img src="https://via.placeholder.com/320x215.png" 
+       data-src="images/gallery/summer.jpg" 
+       alt="summer flowers as seen from the bed of a truck" loading="lazy" height="225" width="325"/>
+       <figcaption>Field of summer flowers</figcaption>
+     </figure>
+     <figure>
+       <img src="https://via.placeholder.com/320x215.png" 
+       data-src="images/gallery/leaves.jpg" 
+       alt="Oak leaves covering the ground" loading="lazy" height="225" width="325"/>
+       <figcaption>Oak leaves are everywhere</figcaption>
+     </figure>
+     <figure>
+       <img src="https://via.placeholder.com/320x215.png" 
+       data-src="images/gallery/rainbow.jpg" 
+       alt="Rainbow across a green field" loading="lazy" height="225" width="325"/>
+       <figcaption>Rainbow over a field</figcaption>
+     </figure>
+     <figure>
+      <img src="https://via.placeholder.com/320x215.png" 
+      data-src="images/gallery/foggy.jpg" 
+      alt="Fog on mountain" loading="lazy" height="225" width="325"/>
+      <figcaption>Fog rolls over the mountain</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/320x215.png" 
+      data-src="images/gallery/clouds.jpg" 
+      alt="Clouds against the blue sky" loading="lazy" height="225" width="325"/>
+      <figcaption>Beautiful clouds against the blue sky</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/320x215.png" 
+      data-src="images/gallery/stormy.jpg" 
+      alt="Storm clouds over a valley" loading="lazy" height="225" width="325"/>
+      <figcaption>Storm clouds gathering over the valley</figcaption>
+    </figure>
+    </div>
+     <script src="js/imagehandling.js"></script>
+      <script src="js/nav.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="js/webfontload.js"></script> 
+    </main>
+    <footer>
+      <p>&copy; <span id='currentyear'></span> I'm Such a Snow it All | Nathan Gregory
+        <br>
+        <a class = "portallink" href='/index.html'>Portal</a> | <span id='currentdate'></span></p>
+    </footer>
+    <script src='js/date.js'></script>
+  </body>
+</html>

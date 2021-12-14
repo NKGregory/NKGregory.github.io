@@ -1,0 +1,146 @@
+@media only screen and (min-width: 500px) {
+	header img {
+        height: 128px;
+        width: 128px;
+	}
+
+	h1 {
+        font-size: 2rem;
+	}
+
+	.subhead {
+        margin-left: 25px;
+        margin-top: -1em;
+	}
+	.weathersummary{
+		height: 225px;
+	}
+	.weathersummary p{
+		font-size: 100%;
+	}
+	.weathersummary h3{
+		font-size: 100%;
+		margin-top: -.5em;
+	}
+	.forcast h3{
+		margin-bottom: -.5em;
+	}
+	.forcast{
+		font-family: 'Roboto', sans-serif;
+		display: block; 
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		max-width: 650px;
+		padding-bottom: 2em;
+	}
+	.datasource{
+		font-size: .75em;
+	}
+	.forcasttable{
+		margin: 0 auto;
+		display: flex;
+		justify-content:center;
+		max-width: 600px;
+	}
+	.forcastday{
+		display: block;
+		text-align: center;
+		background-color: #c6D8ff;
+		border: 1px solid black;
+		width: 100px;
+		height: 125px;
+		margin-top: 0;
+		margin-left: -1px;
+	}
+	.forcastday :first-child{
+		background-color: #1c263F;
+		color: white;
+		margin: auto;
+		padding: .75em;
+	}
+	.forcastday img{
+		margin: 0 auto;
+		margin-top: .25em;
+		margin-bottom: 0;
+		height: 50px;
+		width: auto;
+	}
+	.forcastday :nth-child(3){
+		margin: auto;
+	}
+	.articlecontain{
+		width: 200px;
+		height: auto;
+		float: right;
+		margin-right: 2em;
+		margin-left: .5em;
+	}
+	.article{
+		margin-top: 0;
+	}
+	.contact{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.contactinfo{
+		padding: .5em;
+		margin-left: 2em;
+		justify-self: left;
+	}
+	.map{
+		display: block;
+		justify-self: right;
+		margin-right: 1em;
+		align-self: center;
+		width: 75%;
+		max-width: 400px;
+		margin-top: .5em;
+		border: 1px solid black;
+		border-radius: .25em;
+		box-shadow: .5em .25em #999;
+	}
+	.social img{
+		width: 2em;
+		margin-right: 1em;
+	}
+	/*Gallery Specific CSS*/
+	.gallery {
+    grid-template-columns: 1fr 1fr;
+	}
+	figure:hover {
+		box-shadow: 0 0 0 0 white;
+	}
+	/*Stormcenter Specific CSS*/
+	form fieldset{
+		max-width: 500px;
+		margin: 2rem auto;
+	}
+	form label.top input,form label.top select, form textarea{
+		max-width: 20rem;
+	}
+	form input.submitBtn {
+		max-width: 30%;
+		margin: 2rem 35%;
+	}
+	/*Homepage Specific CSS*/
+	.dadjoke{
+		position: absolute;
+		top: 5em;
+		left: 3em;
+		font-size: 1rem;
+	}
+	.cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em;
+      }
+    .cards section:nth-child(3) img {
+        grid-column: 1;
+    }
+
+    .cards section:nth-child(3) #text {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}

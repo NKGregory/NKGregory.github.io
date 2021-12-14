@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lesson#11 - Fish Haven, ID - Nathan Gregory |WDD230</title>
+    <meta name='description' content='Lesson #11 - Fish Haven Weather page for Nathan Gregory in WDD 230 at BYU-I'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+    <script src="js/banner.js"></script>
+  </head>
+  <body>
+    <header>
+        <img src="images/logo.png" alt="Snow it All Logo">
+        <section class="headings">
+          <h1>I'm Such a Snow it All</h1>
+          <div class="subhead">I predict a 100% Chance of Weather</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+          <li><a class="ham" href="#">&#x2630; Menu</a></li>
+          <li><a class="hamclose" href="#">&#8593; Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="sodasprings.html">Soda Springs</a></li>
+          <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul> 
+    </nav>  
+    <main>
+      <h2>Fish Haven, Idaho</h2>
+
+      <div class="herocontain">
+        <img src="images/fishhaven/fishhaven-hero.jpg" alt="Lake view of mountains">
+        <div class="weathersummary">
+          <h3>Weather Summary</h3>
+          <p>Currently: <span id="currently"></span></p>
+          <p>Temperature: <span id="current-temp"></span>&#176; F</p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Precipitation: 0 inches</p>
+          <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+          <p>Wind Chill: <span id="windchill"></span></p>
+        </div>
+      </div>
+      <div class="events">
+        <h3>Upcoming Events</h3>
+      </div>
+      <div class="forcast">
+        <h3>5 Day Forecast</h3>
+        <p class="datasource">Weather data provided by OpenWeatherMap</p>
+        <hr>
+        <div class="forcasttable">
+        </div>
+      </div>
+      <div class="article">
+        <div class="articlecontain">
+          <img src="images/fishhaven/fishhaven-article.jpg" alt="Old Brick Courthouse">
+        </div>
+        <h3>Opening the Montpelier City Hall cornerstone</h3>
+        <p class="byline">by Valerie Hayes-Ross</p>
+        <p>The highlight of the Montpelier City Council meeting agenda was to open the time capsule 
+          from the cornerstone of the old Montpelier City Hall, which was torn down recently. The 
+          Montpelier City Foundation streamed the opening of the time capsule live on Facebook.
+          Mayor Sharp lead the “ceremony” by first presenting the City Minutes Book, which contains 
+          the record of the approval of a $25,000 bond for the purpose of erecting and equipping the 
+          original city hall, jail, and fire station.
+          Back then, it was figured $15,000 would be sufficient, but that as Montpelier grew in the subsequent ...
+          <a class = "link" href="https://www.hjnews.com/montpelier/opening-the-montpelier-city-hall-cornerstone/article_a2aa4bc5-a708-53e6-965d-343d5a1cc993.html">continue to full article</a>
+        </p>
+      </div>
+      <div class="contact">
+        <img class="map" src="images/fishhaven/fishhavenmap.JPG" alt="Map">
+        <div class="contactinfo">
+          <h3>Contact Us!</h3>
+          <hr>
+          <h4>I'm Such a Snow it All</h4>
+          <p>123 East 456 North</p>
+          <p>Preston, ID 83263</p>
+          <hr>
+          <p>&#9742;(555) 555-5555</p>
+          <p>&#9993;<a href="#">snowitall@gmail.com</a></p>
+          <div class="social">
+            <a class="socialmedia" target="_blank" href="https://www.facebook.com"><img class="icon" src="images/facebook.png" alt="Facebook Icon"></a>
+            <a class="socialmedia" target="_blank" href="https://www.twitter.com"><img class="icon" src="images/twitter.png" alt="Twitter Icon"></a>
+            <a class="socialmedia" target="_blank" href="https://www.youtube.com"><img class="icon" src="images/youtube.png" alt="YouTube Icon"></a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <p>&copy; <span id='currentyear'></span> I'm Such a Snow it All | Nathan Gregory
+        <br>
+        <a class = "portallink" href='/index.html'>Portal</a> | <a class = "portallink" href='https://openweathermap.org/faq'>openweathermap.org</a> | <span id='currentdate'></span></p>
+    </footer>
+    <script src='js/date.js'></script>
+    <script src="js/fishhavenevents.js"></script>
+    <script src="js/fishhavenweatherapi.js"></script>
+    <!--<script src="js/windchill.js"></script>-->
+    <script src="js/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script> 
+  </body>
+</html>

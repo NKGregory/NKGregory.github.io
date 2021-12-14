@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lesson#9 - Preston, ID - Nathan Gregory |WDD230</title>
+    <meta name='description' content='Lesson #9 - Preston Weather page for Nathan Gregory in WDD 230 at BYU-I'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+    <script src="js/banner.js"></script>
+  </head>
+  <body onload="insertbanner()">
+    <div id="bannertext" class=""><h3>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h3></div>
+    <header>
+        <img src="images/logo.png" alt="Snow it All Logo">
+        <section class="headings">
+          <h1>I'm Such a Snow it All</h1>
+          <div class="subhead">I predict a 100% Chance of Weather</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#x2630; Menu</a></li>
+            <li><a class="hamclose" href="#">&#8593; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston-9.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-9.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul> 
+    </nav>  
+    <main>
+      <h2>Preston, Idaho</h2>
+
+      <div class="herocontain">
+        <picture>
+            <source srcset="images/week6_hero_680.jpg" media="(min-width:500px) and (max-width:799px)">
+              <source srcset="images/week6_hero_1100.jpg" media="(min-width:800px)">
+          <img src="images/week6_hero_425.jpg" alt="Hero image">
+        </picture>
+        <div class="weathersummary">
+          <h3>Weather Summary</h3>
+          <p>Currently: Sunny</p>
+          <p>Temperature: <span id="temp">72</span>&#176; F</p>
+          <p>Humidity: 69%</p>
+          <p>Precipitation: 0 inches</p>
+          <p>Wind Speed: <span id="speed">5</span> mph</p>
+          <p>Wind Chill: <span id="windchill"></span></p>
+        </div>
+      </div>
+      <div class="forcast">
+        <h3>5 Day Forcast</h3>
+        <hr>
+        <div class="forcasttable">
+          <div class="forcastday">
+            <p>Wednesday</p>
+            <img src="images/partly_cloudy.png" alt="Partly Cloudy">
+            <p>89&#176; F</p>
+          </div>
+          <div class="forcastday">
+            <p>Thursday</p>
+            <img src="images/partly_cloudy.png" alt="Partly Cloudy">
+            <p>87&#176; F</p>
+          </div>
+          <div class="forcastday">
+            <p>Friday</p>
+            <img src="images/partly_cloudy.png" alt="Partly Cloudy">
+            <p>78&#176; F</p>
+          </div>
+          <div class="forcastday">
+            <p>Saturday</p>
+            <img src="images/partly_cloudy.png" alt="Partly Cloudy">
+            <p>75&#176; F</p>
+          </div>
+          <div class="forcastday">
+            <p>Sunday</p>
+            <img src="images/partly_cloudy.png" alt="Partly Cloudy">
+            <p>72&#176; F</p>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <div class="articlecontain">
+          <img src="images/article-pic.jpg" alt="article image">
+        </div>
+        <h3>Founders Day Fresco</h3>
+        <p class="byline">by Janica Juarez</p>
+        <p>I was recently reflecting upon the founders day event held at Foundation Park each year. I have been taking
+          the festival for granted and have not been properly engagin in perhaps the most popular community event of 
+          the year. In response, I contacted Ms. Sharon via email and expressed my desire to serve on the event 
+          committee. Well, you guessed it, the phone rings almost immediately and she promptly asks me to be the event 
+          committee chair. Literally, good grief! My appreciation for the years of dedicated, generous service of 
+          volunteers and sponsors has escalated beyond what I thought I could feel for such a thing and ... 
+          <a class = "link" href="#">continue to full article</a>
+        </p>
+      </div>
+      <div class="contact">
+        <img class="map" src="images/preston-map.JPG" alt="Map">
+        <div class="contactinfo">
+          <h3>Contact Us!</h3>
+          <hr>
+          <h4>I'm Such a Snow it All</h4>
+          <p>123 East 456 North</p>
+          <p>Preston, ID 83263</p>
+          <hr>
+          <p>&#9742;(555) 555-5555</p>
+          <p>&#9993;<a href="#">snowitall@gmail.com</a></p>
+          <div class="social">
+            <a class="socialmedia" target="_blank" href="https://www.facebook.com"><img class="icon" src="images/facebook.png" alt="Facebook Icon"></a>
+            <a class="socialmedia" target="_blank" href="https://www.twitter.com"><img class="icon" src="images/twitter.png" alt="Twitter Icon"></a>
+            <a class="socialmedia" target="_blank" href="https://www.youtube.com"><img class="icon" src="images/youtube.png" alt="YouTube Icon"></a>
+          </div>
+        </div>
+      </div>
+      <script src="js/nav.js"></script>
+      <script src="js/windchill.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="js/webfontload.js"></script> 
+    </main>
+    <footer>
+      <p>&copy; <span id='currentyear'></span> I'm Such a Snow it All | Nathan Gregory
+        <br>
+        <a class = "portallink" href='/index.html'>Portal</a> | <span id='currentdate'></span></p>
+    </footer>
+    <script src='js/date.js'></script>
+  </body>
+</html>

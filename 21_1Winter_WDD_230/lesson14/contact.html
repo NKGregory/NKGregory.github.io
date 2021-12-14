@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lesson#14 - Home - Nathan Gregory |WDD230</title>
+    <meta name='description' content='Lesson #14 - Chamber of Commerce Home page for Nathan Gregory in WDD 230 at BYU-I'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+  </head>
+  <body>
+    <header>
+      <img src="images/smithfield_logo.png" alt="Smithfield City logo">
+      <section class="headings">
+        <h1>Chamber of Commerce</h1>
+        <h2>Maintaining a healthy economy</h2>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">&#x2630; Menu</a></li>
+        <li><a class="hamclose" href="#">&#8593; Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="smithfieldcity.html">Smithfield</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="active"><a href="contact.html">Contact Us</a></li>
+      </ul> 
+    </nav>  
+    <main>
+      <h2 class="pagehead">Contact Us!</h2>
+      <div class="contactmain">
+      <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4719.056580952683!2d-111.83064396100501!3d41.83218596085321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf2fe47a80753a89!2sSmithfield%20City%20Office!5e0!3m2!1sen!2sus!4v1617331165434!5m2!1sen!2sus" 
+      allowfullscreen="" loading="lazy">
+      </iframe>
+      <form  class = "contact" action="contact-thanks.html" method="get" autocomplete="on">
+          <p class="reqtext">* Indicates Required Field</p>
+          <label class="top" for="fullname">*Full Name
+            <input type="text" name="name" id="fullname" autocomplete="name" pattern="[A-Za-z-.\s]{3,}" required>
+          </label>
+          <label class="top" for="cell">Cell Phone
+            <input type="tel" name="cell" id="cell" pattern="[0-9]{10}"
+            title="10 digit cell number">
+          </label>
+          <label class="top" for="email">*Email
+            <input type="email" name="email" id="email" placeholder="example@domain.com" 
+            autocomplete="email" required>
+          </label>
+          <label class="top">Questions/Comments 
+            <textarea name="comments" placeholder="Type here..." rows="3"></textarea>
+          </label>
+          <input class="submitBtn" type="submit" value="Contact Us">
+      </form>
+        <div class="contactinfo">
+          <hr>
+            <h3>Smithfield Chamber of Commerce</h3>
+            <p>96 Main St</p>
+            <p>Smithfield, UT 84335</p>
+            <p>&#9742;(555) 555-5555</p>
+            <p>&#9993;<a href="#">smithfieldchamber@gmail.com</a></p>
+            <hr>
+            <div class="board">
+              <h3>Board of Directors</h3>
+              <p>President: Wayne Moore, Alpine Cleaning and Restoration</p>
+              <p>Treasurer: Terri Stapley, Stapley Accounting Services</p>
+              <p>Director: Nicole Zollinger</p>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id='currentyear'></span> Smithfield City | Nathan Gregory</p>
+      <p class="updateline">Last Updated: <span id="lastupdate"></span></p>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="/js/date.js"></script>
+  </body>
+</html>

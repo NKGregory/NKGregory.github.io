@@ -1,0 +1,46 @@
+@media only screen and (min-width: 800px) {
+	header img {
+        height: auto;
+        width: 128px;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		padding:.75rem;
+		flex:1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li:nth-child(2) {
+		display: none;
+	}
+	/*Preston Specific CSS*/
+	.weathersummary{
+		height: 240px;
+	}
+	/*Gallery Specific CSS*/
+	.gallery {
+		grid-template-columns: 1fr 1fr 1fr;
+
+	}
+	figure:hover {
+		box-shadow: 0 0 50px #333;
+	}
+	/*Stormcenter Specific CSS*/
+	form label.sidexside{
+		padding: .4rem 0;
+	}
+	/*Homepage Specific CSS*/
+	.cards{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.cards section {
+        display: block; 
+      }
+}

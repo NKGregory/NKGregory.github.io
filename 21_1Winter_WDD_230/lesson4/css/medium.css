@@ -1,0 +1,16 @@
+@media only screen and (min-width: 32.5em) {
+	header img {
+        height: 128px;
+        width: 128px;
+	}
+
+	.headings h1 {
+        font-size: 2rem;
+	}
+
+	.subhead {
+        margin-left: 25px;
+        margin-top: -1em;
+	}
+
+}

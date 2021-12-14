@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lesson#14 - Home - Nathan Gregory |WDD230</title>
+    <meta name='description' content='Lesson #14 - Chamber of Commerce Home page for Nathan Gregory in WDD 230 at BYU-I'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+  </head>
+  <body>
+    <header>
+      <img src="images/smithfield_logo.png" alt="Smithfield City logo">
+      <section class="headings">
+        <h1>Chamber of Commerce</h1>
+        <h2>Maintaining a healthy economy</h2>
+      </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+          <li><a class="ham" href="#">&#x2630; Menu</a></li>
+          <li><a class="hamclose" href="#">&#8593; Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="smithfieldcity.html">Smithfield</a></li>
+          <li><a href="join.html">Join Us</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul> 
+    </nav>  
+    <main>
+      <h2 class="pagehead">Smithfield City</h2>
+      <div class="cityherocontain">
+        <img src="images/smithfield-hero.jpg" alt="View overlooking Smithfield Canyon">
+        <div class="heroverlay">
+          <p>Established in 1859 as Summit Creek</p>
+          <p>Founded by brothers Robert and John Thornley</p>
+          <p>Name changed to Smithfield in 1860 in honor of John Glover Smith</p>
+          <p>Current estimates put the population at 12,100 people</p>
+        </div>
+      </div>
+      <div class="smithfieldevents">
+        <h3>Upcoming Events</h3>
+        <p>March 20 : Shamrock Shuffle Fun Run</p>
+        <p>June 1 - 5 : Health Days</p>
+        <p>November 20 : Turkey Trot Fun Run</p>
+      </div>
+      <div class="article">
+        <h3>‘What a blessing’: What Latter-day Saints are saying about temple plans in their hometowns</h3>
+        <div class="articlecontain">
+          <img src="images/article.jpg" alt="Orem City Temple">
+        </div>
+        <p class="byline">by Trent Toone</p>
+        <p>Watching from her Smithfield, Utah, home Sunday afternoon, Barbara Gutke said she “squealed” with 
+          delight when President Russell M. Nelson announced plans for her hometown to have a temple of The Church 
+          of Jesus Christ of Latter-day Saints. The 96-year-old, who proudly proclaims to be two months and one 
+          day older than President Nelson, was so moved by the Smithfield Temple news that she watched a 
+          recording of the announcement multiple times. Then she spent all Monday morning answering the 
+          telephone and sending texts messages to dozens of people. “I cried tears. I couldn’t believe ...
+          <a class = "link" href="https://www.deseret.com/faith/2021/4/6/22368690/what-a-blessing-how-latter-day-saints-are-reacting-to-temple-plans-in-western-united-states-lds">continue to full article</a>
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id='currentyear'></span> Smithfield City | Nathan Gregory</p>
+      <p class="updateline">Last Updated: <span id="lastupdate"></span></p>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/date.js"></script>
+  </body>
+</html>

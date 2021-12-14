@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lesson#14 - Home - Nathan Gregory |WDD230</title>
+    <meta name='description' content='Lesson #14 - Chamber of Commerce Home page for Nathan Gregory in WDD 230 at BYU-I'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+  </head>
+  <body>
+    <header>
+      <img src="images/smithfield_logo.png" alt="Smithfield City logo">
+      <section class="headings">
+        <h1>Chamber of Commerce</h1>
+        <h2>Maintaining a healthy economy</h2>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">&#x2630; Menu</a></li>
+        <li><a class="hamclose" href="#">&#8593; Menu</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="smithfieldcity.html">Smithfield</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul> 
+    </nav>  
+    <main class="indexgrid">
+      <div class="indexherocontain">
+        <img src="images/index-hero.jpg" alt="Open sign in front of a local store">
+        <div class="call2action">
+          <a href="join.html">
+          <h2>Join the Chamber of Commerce!</h2>
+          <h2>Support local businesses!</h2></a>
+        </div>
+      </div>
+            <div class="chamberad1">
+              <a target="_blank" href="https://rigochaparro.com/"><img src="images/statefarm-ad.jpg" alt="advertisement for state farm"></a>
+            </div>
+            <div class="chamberad2">
+              <a target="_blank" href="https://easybreezyducts.com/"><img src="images/eezy-ad.jpg" alt="advertisement for eezy breezy ducts"></a>
+            </div>
+            <div class="chamberad3">
+              <a target="_blank" href="https://www.alpinecleaning.com/"><img src="images/alpine-ad.jpg" alt="advertisement for alpine cleaning"></a>
+            </div>
+        <div class="whatchamber">
+          <h3>What is a chamber of commerce?</h3>
+          <p>A chamber of commerce is an organization that helps build up local businesses. It is a place for 
+            networking and discovering new avenues for advertising. Most importantly it is a local entity populated 
+            with local business owners, striving to improve our local economy. In a time of economic uncertainty our 
+            goal is to help our neighbor more so than ever before. Help us create a better future for our town.
+            <a href="join.html">Join us today!</a>
+          </p>
+         </div>
+        <div class="upcomingevents">
+          <h3>Upcoming Events</h3><hr>
+          <p>Easter Egg Hunt: April 03, 2021</p>
+          <p>Golf Tournament: May 05, 2021</p>
+          <p>Night of Giving: December 04, 2021</p>
+        </div>
+        <div class="weather">
+            <div id="alertxt" class="">
+                <a class="closealert" href="#">X</a>
+                <p>Sender Name: <span id="alertsender"></span></p>
+                <p>Event: <span id="alertevent"></span></p>
+                <p>Start: <span id="alertstart"></span></p>
+                <p>End: <span id="alertend"></span></p>
+                <p>Description: <span id="alert"></span></p>
+            </div>
+            <h3 class="summarytitle">Weather Summary</h3>
+            <div class="summary">
+                <p>Temperature: <span id="current-temp"></span>&#176; F</p>
+                <p>Currently: <span id="current-description"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+            </div>
+            <h3 class="forcastitle">3-Day Forecast</h3>
+            <div class="forcast">
+            </div>
+        </div>
+        <div>
+          <iframe class = "indexmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5945.408238340149!2d-111.832336!3d41.834669!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf2fe47a80753a89!2sSmithfield%20City%20Office!5e0!3m2!1sen!2sus!4v1617903761653!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="social">
+          <a class="socialmedia" target="_blank" href="https://www.facebook.com/SmithfieldCham/"><img class="icon" src="images/facebook.png" alt="Facebook Icon"></a>
+          <a class="socialmedia" target="_blank" href="https://twitter.com/SmithfieldCham"><img class="icon" src="images/twitter.png" alt="Twitter Icon"></a>
+          <a class="socialmedia" target="_blank" href="https://www.instagram.com/smithfieldchamber/"><img class="icon" src="images/instagram.png" alt="Instagram Icon"></a>
+        </div>
+        <div class="indexcontactinfo">
+            <h3>Smithfield Chamber of Commerce</h3>
+            <p>96 Main St</p>
+            <p>Smithfield, UT 84335</p>
+            <p>&#9742;(555) 555-5555</p>
+            <p>&#9993;<a href="#">smithfieldchamber@gmail.com</a></p>
+        </div>
+    </main>
+    <footer>
+      <p>&copy; <span id='currentyear'></span> Smithfield City | Nathan Gregory</p>
+      <p class="updateline">Last Updated: <span id="lastupdate"></span></p>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/weatherapi.js"></script>
+  </body>
+</html>
