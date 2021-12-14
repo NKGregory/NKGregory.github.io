@@ -1,0 +1,5 @@
+{
+    "git.postCommitCommand": "push",
+    "git.inputValidation": "off",
+    "git.decorations.enabled": false
+}
