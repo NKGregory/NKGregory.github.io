@@ -1,0 +1,113 @@
+#Color_Pallette{
+    background-color: #f0e7e7;
+    color: #451804;
+    color: #c1440e;
+    color: #e77d11;
+    color: #fda600;
+}
+header{
+    background-color: #451804;
+    color: #fda600;
+    display: flex;
+    justify-content: center;
+    padding: .25rem;
+}
+header img{
+    width: 64px;
+    height: 64px;
+    align-self: center;
+    margin-left: .125rem;
+}
+.TitleBar{
+    margin-left: .5rem;
+}
+h1, h2, h3{
+    font-family: 'Orbitron', sans-serif;
+}
+h1{
+    font-size: 2.25em;
+}
+h2{
+    font-size: 1.75em;
+    margin-left: .5em;
+}
+h3{
+    font-size: 1.5em;
+    margin-left: .5em;
+    margin-top: -.25em;
+}
+header p{
+    color: #e77d11;
+    margin-top: -1rem;
+    margin-left: .5rem;
+    font-size: 1.125em;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0e7e7;
+}
+figure{
+    margin: .5rem;
+    background-color: #fda600;
+    text-align: center;
+    border: solid 2px black;
+    padding: 1em;
+    width: 75%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+figure img{
+    width: 100%;
+    height: auto;
+    border: black 1px solid;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+.mission{
+    border: black 2px solid;
+    padding: 1em;
+    background-color: #e77d11;
+    width: 75%;
+    max-width: 500px;
+    margin: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.facts{
+    border: black 2px solid;
+    padding: 1em;
+    background-color: #e77d11;
+    width: 75%;
+    max-width: 500px;
+    margin: .5rem; 
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    width: 100px;
+    background-color: #f0e7e7;
+    color: #451804;
+    text-indent: .25em;
+    border: black 1px solid;
+    border-radius: .5em;
+}
+button{
+    width: 100px;
+    background-color: #451804;
+    color: #fda600;
+    text-align: center;
+}
+footer{
+    background-color: #451804;
+    color: #fda600;
+    padding: .5rem;
+    text-align: center;
+}
+.link{
+    color: #f0e7e7;
+}
+.link:hover{
+    background-color: #f0e7e7;
+    color: #451804;
+}

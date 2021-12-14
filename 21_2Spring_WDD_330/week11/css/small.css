@@ -1,0 +1,32 @@
+#Color_Pallette{
+    background-color: #f0e7e7;
+    color: #451804;
+    color: #c1440e;
+    color: #e77d11;
+    color: #fda600;
+}
+header{
+    background-color: #451804;
+    color: #fda600;
+}
+header p{
+    color: #e77d11;
+}
+h1{
+    font-family: 'Orbitron', sans-serif;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0e7e7;
+}
+.picontainer img{
+    width: 75%;
+    max-width: 500px;
+    height: auto;
+    border: black 1px solid;
+}
+footer{
+    background-color: #451804;
+    color: #fda600;
+}

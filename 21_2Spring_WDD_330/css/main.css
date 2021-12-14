@@ -1,0 +1,54 @@
+header,footer {
+    background-color: #457B9D;
+    color:white;
+    text-align: center;
+  }
+  footer {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size:0.9em
+  }
+  
+  
+  .updateline{
+      font-size:0.85em;
+      color: white;
+  }
+  
+  .byulink{
+    color:white;
+  }
+  footer a:hover{ 
+    color: black;
+  }
+  
+  a:hover{
+      color:#1D3557;
+      background-color: white;
+  }
+  
+  h1{
+    font-size: 2em;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+  }
+  
+  h2{
+      font-size: 1.8em;
+      font-family: 'Lato', sans-serif;
+  }
+  
+  header img {
+      height: 200px;
+      width:auto;
+  
+    }
+  
+    body{
+      max-width: 750px;
+      margin: 0 auto;
+      background-color: #A8DADC;
+      font-family: 'Lato', sans-serif;
+    }
+  
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Seeing Red | Home</title>
+    <meta name='description' content='Insight page for Nathan Gregory in WDD 330 at BYU-I'>
+    <link rel="shortcut icon" href="images/mars.ico">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <!-- <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'> -->
+</head>
+<header>
+    <h1>Seeing Red</h1>
+    <p>Take a look at Mars through the eyes of a rover</p>
+</header>
+<body onload="getPhoto(); date();">
+    <h2>Curiousity</h2>
+    <div class="picontainer"></div>
+    <h3>Mission</h3>
+    <p>August 5, 2012 to Present</p>
+    <p>Curiosity's mission is to determine whether the Red Planet ever was, or is, habitable to microbial life</p>
+    <p>What makes the red planet red?</p>
+    <p>Iron Oxide, more commonly known as rust!</p>
+    <input id="weightinput"></input>
+    <button onclick="marsweight()">Calculate</button>
+    <div><span id="weightoutput"></span></div>
+    <script src='js/challenge2.js'></script>
+</body>
+<footer>
+    <p>&copy; <span id="currentyear"></span> | Nathan Gregory | Utah |
+    <a target="_blank" href="https://www.byui.edu/online" class="byulink"
+      >BYUI Online Learning</a></p>
+      <p class="updateline">Last Updated: <span id="currentdate"></span></p>
+</footer>
+</html>

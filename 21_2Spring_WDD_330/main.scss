@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+//colors
+$tan: #FAEBD7;
+$blue: #6495ED;
+$orange: #DEB887;
+
+// mix-ins
+@mixin flex-container($axis, $wrap: nowrap) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: $axis $wrap;
+  -ms-flex-flow: $axis $wrap;
+  flex-flow: $axis $wrap;
+}
+  
+
+h1, h2{
+  font-family: 'Lora', serif;
+}
+body{
+
+  font-family: Helvetica, arial, sans-serif;
+}
+main{
+  background-color: $tan;
+  @media only screen and (min-width: 800px) {
+    & {
+      margin-left: 15rem;
+    }
+  }
+}
+nav ul{
+  list-style: none;
+  @media only screen and (min-width: 800px) {
+    & {
+      @include flex-container(column); 
+    }
+  }
+}
+nav ul li{
+  padding: .25rem;
+}
+header{
+  background-color: $blue;
+  padding: 2rem;
+  text-align: right;
+  @media only screen and (min-width: 800px) {
+    & {
+      position: fixed;
+      width: 11rem;
+      height: 100%;
+    }
+  }
+}
+header a{
+  text-decoration: none;  
+  color: $tan;
+}
+header a:visited{
+  text-decoration: none;  
+  color: $tan;
+}
+header a:active{
+  color: $orange;
+}
+header a:hover{
+  color: white;
+  text-decoration: underline;
+}
+article{
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 3rem;
+  margin-top: 5rem;
+  box-shadow: 2px 2px 5px #808080;
+}
+article figure{
+  text-align: center;
+  margin-top: 5rem;
+}
+article p a{
+  color: $blue;
+  text-decoration: none;
+}
+article p a:visited{
+  color: $blue;
+  text-decoration: none;
+}
+article p a:active{
+  color: $orange;
+}
+article p a:hover{
+  text-decoration: underline;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+a:visited{
+  color: #000;
+  text-decoration: none;
+}
+a:active{
+  color: $orange;
+}
+a:hover{
+  color: $blue;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 800px) {
+  body div{
+    display: flex;
+    position: relative;
+  }
+}

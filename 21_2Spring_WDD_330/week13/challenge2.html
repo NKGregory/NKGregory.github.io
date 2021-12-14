@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Seeing Red | Home</title>
+    <meta name='description' content='Seeing Red page for Nathan Gregory in WDD 330 at BYU-I'>
+    <link rel="shortcut icon" href="images/mars.ico">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' href='css/medium.css'>
+    <link rel='stylesheet' href='css/large.css'>
+</head>
+<body onload="getPhoto(); date();">
+    <header>
+        <img src="images/SeeingRedLogo.png" alt="Mars with a high shine">
+        <section class="TitleBar">
+            <h1>Seeing Red</h1>
+            <p>An updated view from Mars</p>
+        </section>
+    </header>
+    <main>
+        <h2>Curious?</h2>
+        <figure class="picontainer"></figure>
+        <div class="mission">
+            <h3>Mission</h3>
+            <p>Curiosity's mission is to determine whether the Red Planet ever was, or is, habitable to microbial life</p>
+            <p>Mission Clock: Curioity has spent <span id="currentsol"></span> Sols on Mars</p>
+        </div>
+        <div class="facts">
+            <h3>Mars Facts</h3>
+            <p>What makes the red planet red? Iron Oxide, more commonly known as rust!</p>
+            <p>Mars has two moons named Phobos and Deimos.</p>
+            <p>A day on mars is called a Sol and is 24.6 hours. However a year on mars is 687 Earth Days!</p>
+            <label for="ageinput">
+                <input id="ageinput" placeholder="Age"> Earth Years
+            </label>
+            <button onclick="marsage()">Calculate</button>
+            <div>Age: <span id="ageoutput"></span></div>
+            <p>Mars has about 38% of the gravity acceleration than Earth does.</p>
+            <label for="weightinput">
+                <input id="weightinput" placeholder="Earth Weight"> kg/lbs
+            </label>
+            <button onclick="marsweight()">Calculate</button>
+            <div>Weight on Mars: <span id="weightoutput"></span></div>
+        </div>
+        <script src='js/challenge2.js'></script>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Nathan Gregory |
+            <br>
+            <a href='https://nkgregory.github.io/nkgregory330/index.html' class="link">Portal</a> 
+            | <span id='currentdate'></span></p>
+    </footer>
+</body>
+</html>

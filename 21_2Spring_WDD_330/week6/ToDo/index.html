@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>To Do - Nathan Gregory |WDD330</title>
+    <meta name='description' content='To Do challenge for Nathan Gregory in WDD 330 at BYU-I'>
+    <script src="js/ToDos.js"></script>
+    <link rel="stylesheet" href="css/ToDos.css">
+  </head>
+  <body onload="showAllToDos(); date();">
+    <h2>To Do</h2>
+    <section id="list">
+    </section>
+    <section id="selection_area">
+        <button onclick="ShowIncompleteToDos()">Active</button>
+        <button onclick="ShowCompleteToDos()">Completed</button>
+        <button onclick="showAllToDos()">All</button>
+        <p id="ToDosLeft"></p>
+    </section>
+    <section id="spacing"></section>
+    <section id="input_area">
+        <input id="input"></input>
+        <button onclick="AddToDo()">Add</button>
+    </section>
+    <footer>
+        <p>&copy; <span id='currentyear'></span> | Nathan Gregory
+          <br>
+          <a href='https://nkgregory.github.io/nkgregory330/index.html'>Portal</a> | <span id='currentdate'></span></p>
+      </footer>
+    </body>
+</html>
